@@ -1,58 +1,280 @@
+.section-division {
+    height: 50px;
+    width: 100%;
+}
+
 #page1 {
     background: white;
     padding-top: 125px;
 }
-#formselector{
-    padding-top: 120px;
+
+#hire-container{
+    height: 150px;
+    width: 100%;
 }
-.contratar{
-    margin: 40px auto;
-    width: 810px;
-    height: 50px;
+
+#slider {
+    height: 250px;
 }
-h1{
-    text-align: center;
-    color:#002f5c;
-    font-size: 30px;
+
+#page2 {
+    margin-top: 15px;
+    padding-top: 100px;
+    width: 100%;
 }
-#sele{
-    background: #002f5c;
-    width: 615px;
-    height: 45px;
-    float:left;
-    margin: 3px;
-    display: inline-block;
-    border-radius: 10px;
+
+.form-cotizar {
+    width: 33%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
-#botcon , #linkcontacto{
-    width: 180px;
-    float:center;
+
+.form-cotizar p {
+    font-size: 35px;
     color: white;
-    font-size: 18px;
-    background: green;
-    height: 45px;
-    margin: 3px;
-    display: inline-block;
-    border-radius: 10px;
-
+    font-family: Montserrat;
+    margin-bottom: 20px;
+    font-weight: 1;
 }
-#linkcontacto{
-    padding-top: 18px;
-    width: 300px;
-    font-size: 22px;
 
+.form-cotizar input {
+    margin-bottom: 10px;
 }
-select{
+
+.cotizar-submit {
+    margin-top: 15px;
+    font-family: Montserrat;
+}
+
+.cotizar-msg {
+    margin-top: 10px;
+    font-family: Raleway;
+    color: #E3E3E3;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.blue-content {
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+}
+
+.content,.content2, .content3{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding-top: 40px; 
+}
+
+.content:after,.content2:after{
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 37px 50px 0 50px;
+    border-color: white transparent transparent transparent;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+}
+
+.content2:after{
+    border-color: #002f5c transparent transparent transparent;
+}
+
+.separador-top{ 
+    margin-top: 10px;
+    margin-bottom: 110px;
+    height: 170px; 
+} 
+
+.separador-bot { 
+    height: 170px; 
+
+} 
+#ventajas{ 
+    height: 300px; 
+    margin-top: -30px; 
+    vertical-align: middle; 
+    padding-top: 3px; 
+
+
+} 
+#ventajasin1, #ventajasin2, #ventajasin3, #ventajasin4{ 
+    height: 190px; 
+    margin: 5px; 
+    width: 20%; 
+    display: inline-block; 
+}
+
+.cotizar-content {
+    margin-top: 30px;
+}
+
+#page-4 {
+    
+}
+
+.tab-container {
+    width: 100%;
+    margin-top: 200px;
+    height: 100px;
+}
+
+.white {
+    background-color: white;
+}
+
+.tab {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #003E7E;
+}
+
+.tab-link {
+    font-size: 15px;
+    font-family: Montserrat;
+    letter-spacing: 3px;
+}
+
+.unselected {
+    background-color: white;
+    color: #003E7E ;
+}
+
+.selected {
+    background-color: #003E7E ;
+    color: white;
+}
+
+.dropdown-carrot {
+    border-left: 1px solid white;
+}
+
+.tab-info {
+    height: 500px;
+    background-color: #003E7E ;
+    margin-top:100px;
+    text-align: center;
+    padding: 50px;
+}
+
+.info-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    font-family: Raleway;
+    letter-spacing: 5px;
+    font-weight: 1;
+}
+
+.tab-info hr {
+    margin-top: 30px;
+    width: 25%;
+}
+
+.info-subtitle {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+    font-family: Raleway;
+    letter-spacing: 10px;
+    font-weight: 1;
+   
+}
+
+.info-text {
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat;
+}
+
+/*===============================================*/
+#page5{
+    height: 280px;
     background: white;
-    border-radius: 10px;
-    width: 110px;
-    float:left;
-    margin: 3px;
-    margin-left: 10px;
-    display: inline-block;
-    height: 38px;
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#titulocreemos{
     color: #002f5c;
-    line-height: 38px;
-    font-size: 14px;
+    padding-top: 0px;
+    font-family: Raleway;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+hr{
+    height: 1px;
+    background-color: #002f5c;
+    width: 73%;
+    margin-top: 20px;
+}
+
+#textocreemos{
+    font-size: 17px;
+    width: 75%;
+    margin: 0 auto;
+    line-height: 30px;
+    font-family: Montserrat;
+}
+
+#page6 {
+    height: 370px;
+    padding-top: 85px;
+}
+
+#texto_contacto, #texto_contacto0, #texto_contacto1 {
+    padding-top: 40px;
+    font-size: 17px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+#titulocontacto{
+    color: white;
+    font-size: 35px;
+    padding-top: 30px;
+    line-height: 14px;
+    font-family: Montserrat;
+    margin-bottom: 10px;
+}
+
+#titulocontacto{
+    margin-top: -45px;
+}
+
+#texto_contacto1, #texto_contacto0 {
+    padding-top: 30px;
+}
+#texto_contacto3 {
+    line-height: 28px;
+}
+#face {
+    margin-top: -10px;
+}
+#twi {
+    margin-top: -15px;
+}
+
+#page7 {
+    background: white;
+    color: #002f5c;
+    font-family: Raleway;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+#texto_contacto3 {
+    padding-top: 40px;
+    font-size: 17px;
+    text-align: center;
 }
 
