@@ -1,7 +1,7 @@
-.section-division {
-    height: 50px;
-    width: 100%;
-}
+body {
+    min-width: 1200px;
+} 
+
 
 #page1 {
     background: white;
@@ -17,9 +17,11 @@
     height: 250px;
 }
 
-#page2 {
-    margin-top: 15px;
-    padding-top: 100px;
+#contact-form-section {
+    height: 150px;
+}
+
+#contact-form {
     width: 100%;
 }
 
@@ -35,7 +37,10 @@
     font-size: 35px;
     color: white;
     font-family: Montserrat;
+    font-weight: bold;
     margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
     font-weight: 1;
 }
 
@@ -49,11 +54,13 @@
 }
 
 .cotizar-msg {
-    margin-top: 10px;
+    margin-top: 25px;
     font-family: Raleway;
+    color: white;
     color: #E3E3E3;
-    font-style: italic;
-    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 
 .blue-content {
@@ -89,7 +96,7 @@
 
 .separador-top{ 
     margin-top: 10px;
-    margin-bottom: 110px;
+    margin-bottom: 10px;
     height: 170px; 
 } 
 
@@ -97,51 +104,15 @@
     height: 170px; 
 
 } 
-#ventajas{ 
-    height: 300px; 
-    margin-top: -30px; 
-    vertical-align: middle; 
-    padding-top: 3px; 
-
-
-} 
-#ventajasin1, #ventajasin2, #ventajasin3, #ventajasin4{ 
-    height: 190px; 
-    margin: 5px; 
-    width: 20%; 
-    display: inline-block; 
-}
 
 .cotizar-content {
     margin-top: 30px;
-}
-
-#page-4 {
-    
-}
-
-.tab-container {
-    width: 100%;
-    margin-top: 200px;
-    height: 100px;
 }
 
 .white {
     background-color: white;
 }
 
-.tab {
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-    border-right: 1px solid #003E7E;
-}
-
-.tab-link {
-    font-size: 15px;
-    font-family: Montserrat;
-    letter-spacing: 3px;
-}
 
 .unselected {
     background-color: white;
@@ -153,56 +124,123 @@
     color: white;
 }
 
-.dropdown-carrot {
-    border-left: 1px solid white;
+/* SEGUROS */
+
+#seguros-section {
+    height: 150px;
 }
 
-.tab-info {
-    height: 500px;
-    background-color: #003E7E ;
-    margin-top:100px;
+#seguros {
+    height: 550px;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+}
+
+.section-title-container {
+    height: 50px;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 50px;
 }
 
-.info-title {
-    font-size: 35px;
-    font-weight: bold;
-    color: white;
-    font-family: Raleway;
-    letter-spacing: 5px;
-    font-weight: 1;
-}
-
-.tab-info hr {
-    margin-top: 30px;
-    width: 25%;
-}
-
-.info-subtitle {
-    margin-top: 30px;
-    font-size: 30px;
-    color: white;
-    font-family: Raleway;
-    letter-spacing: 10px;
-    font-weight: 1;
-   
-}
-
-.info-text {
-    color: white;
-    font-size: 15px;
+.section-title {
     font-family: Montserrat;
+    letter-spacing: 2px;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+.left-nav {
+    border-right: 1px solid white !important;
+    height: 100%;
+}
+
+.sublinks {
+    height: 450px;
+    overflow: hidden;
+}
+
+.section-sublinks {
+    height: 100%;
+}
+
+.sublink-container {
+    color: white;
+}
+
+#personas-sublinks .sublink-container {
+    height: 30%;
+}
+
+.sublink-container .col-md-8 {
+    height: 100%
+}
+
+#empresas-sublinks .sublink-container{
+    height: 14.2%;
+}
+
+.empresas-sublink .sublink-text {
+    font-family: Montserrat;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+.sublink-text {
+    font-family: Montserrat;
+    letter-spacing: 4px;
+}
+
+.bordered {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* Links de la barra lateral */
+
+/* PERSONAS*/
+#automotores {
+    margin-top: 60px;
+}
+
+#combinado-familiar {
+    margin-top: 40px;
+}
+
+#accidentes-personales {
+    margin-top: 50px;
+}
+
+/* EMPRESAS*/
+
+#flota {
+    margin-top: 25px;
+}
+
+#art {
+    margin-top: 20px;
+}
+
+#indu-agro {
+    margin-top: 13px;
+}
+
+#int-comercio {
+    margin-top: 12px;
+}
+
+#int-consorcio {
+    margin-top: 13px;
+}
+
+#caucion-garantias {
+    margin-top: 19px;
+}
+
+#transporte {
+    margin-top: 18px;
 }
 
 /*===============================================*/
-#page5{
-    height: 280px;
-    background: white;
-    color: black;
-    text-align: center;
-    margin-top: 40px;
-}
 
 #titulocreemos{
     color: #002f5c;
@@ -212,6 +250,7 @@
     font-weight: bold;
     letter-spacing: 5px;
 }
+
 hr{
     height: 1px;
     background-color: #002f5c;
@@ -254,27 +293,387 @@ hr{
 
 #texto_contacto1, #texto_contacto0 {
     padding-top: 30px;
+    font-family: Raleway, sans-serif;
 }
+
 #texto_contacto3 {
     line-height: 28px;
 }
+
 #face {
     margin-top: -10px;
 }
+
 #twi {
     margin-top: -15px;
 }
 
-#page7 {
-    background: white;
-    color: #002f5c;
-    font-family: Raleway;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
 #texto_contacto3 {
     padding-top: 40px;
     font-size: 17px;
     text-align: center;
+}
+
+                                                /* BUTTONS */
+
+.buttons {
+    position: relative;
+    height: 200px;
+}
+
+.buttons_container {
+    position: absolute;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.buttons_container ul {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.buttons_container ul li {
+    display: inline-block;
+    padding: 10px 35px;
+}
+
+.buttons_container ul li p{
+    font-family: Raleway, sans-serif;
+    color: #003E7E;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.buttons_img {
+    width: 100px;
+    height: 100px;
+}
+
+                                            /* QUIÉNES SOMOS */
+
+
+.who-are-we {
+    width: 100%;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    padding: 35px;
+    margin-top: 100px;
+}
+
+.white-stripes {
+    width: 70%;
+    height: 120px;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.white-stripes h1 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.p-our-beliefs h3{
+    text-align: center;
+    color: #003E7E;
+    font-family: Montserrat;
+    font-size: 23px;
+    letter-spacing: 9px;
+    margin-top: 60px;
+    margin-left: 10px;
+    padding-bottom: 13px;
+}
+
+.security-line {
+    width: 85%;
+    height: 50px;
+    border-top: 1px solid #003E7E;
+    margin: 0 auto;
+    margin-top: -8px;
+}
+
+.p-our-beliefs p{
+    width: 87%;
+    text-align: center;
+    color: #003E7E;
+    font-family: Raleway;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: -30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+                                                /* SUCURSALES */
+
+.sucursales {
+    width: 100%;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.sucursales hr {
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.sucursales h1 {
+    padding: 20px;
+    padding-top: 25px;
+    color: white;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px black;
+}
+
+                                                /* BLUE IMAGES */
+
+.blue-images {
+    margin: 0;
+    width: 100%;
+    height: 310px;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    margin-top: 25px;
+}
+
+.blue-images__delviso {
+    position: relative;
+    top: 20px;
+    left: 30%;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+ }
+
+.blue-images__delviso img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.blue-images__derqui {
+    position: relative;
+    top: 20px;
+    left: 30%;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+ }
+
+.blue-images__derqui img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.blue-images__derqui h3 {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.blue-images__delviso h3 {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.blu-images__container {
+    position: relative;
+    float: left;
+    left: 20%;
+}
+
+                                                /* MAP */
+
+.map {
+    width: 100%;
+}
+
+
+                                                /* TEXTO SUCURSALES */
+
+.text-sucursales h2{
+    color: #003E7E;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 4px;
+    font-size: 23px;
+    padding-top: 25px;
+}
+
+.text-sucursales hr {
+    color: #003E7E;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #003E7E;
+}
+
+.text-sucursales p {
+    color: #003E7E;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+
+
+                                            /* CONTACTO */
+
+#contact {
+    padding: 20px;
+    margin-top: -10px;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+}
+
+#contact h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    text-shadow: 2px 1px 0px black;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+
+.contact__phone {
+    position: relative;
+    left: 36%;
+    top: 10%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.contact__phone .ion-ios7-telephone {
+    position: absolute;
+    left: 28%;
+    top: 4%;
+    color: white;
+    font-size: 25px;
+}
+
+.contact__phone:hover {
+    background: rgba(255,255,255,0.8);
+}
+
+.contact__phone:hover .ion-ios7-telephone {
+    color: #002D5C;
+}
+
+.phone-number {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -10px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+}
+
+.contact__mail-icon {
+    position: relative;
+    left: 31%;
+    top: 10%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.contact__mail-icon .ion-android-mail {
+    position: absolute;
+    left: 27%;
+    top: 18%;
+    color: white;
+    font-size: 18px;
+}
+
+.contact__mail-text {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -7px;
+    letter-spacing: 1px;
+}
+
+.contact__mail-icon:hover {
+    background: rgba(255,255,255,0.8);
+}
+
+.contact__mail-icon:hover .ion-android-mail {
+    color: #002D5C;
+}
+
+                                            /* FOOTER */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background: #001D46;
+    overflow: hidden;
+}
+
+footer p {
+    width: 250px;
+    color: rgba(255,255,255,0.5);
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-left: 50px;
+    padding-top: 25px;
+    margin-top: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer ul {
+    float: right;
+    margin-top: -26px;
+    margin-right: 30px;
+}
+
+footer ul li{
+    display: inline;
+    color: rgba(255,255,255,0.5);
+    font-family: Raleway, sans-serif;
+    font-weight: lighter;
+    float: right;
+    padding-right: 20px;
+    font-size: 12px;
 }
 

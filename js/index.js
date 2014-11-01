@@ -36,7 +36,8 @@ win
         currClass=names[i-2]
         header.removeAttr("class").addClass(names[i-2])
     })
-    }(); });
+    }(); 
+});
 
 function goToByScroll(id){
     $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
@@ -53,4 +54,5 @@ $(window).load(function() {
         controlNav: false,
     });
 });
+
 

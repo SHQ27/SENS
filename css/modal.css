@@ -1,0 +1,153 @@
+.modal {
+    width: 77% !important;
+}
+														/* TOP */
+
+.form-modal {
+	background: -webkit-linear-gradient(#003E7E,#002B5F);
+	height: 1075px;
+}
+
+.form-top {
+	position: relative;
+}
+
+.form-top img{
+	margin: 30px;
+	width: 200px;
+	height: 46px;
+}
+
+.form-top p {
+	position: relative;
+	right: 50px;
+	top: 43px;
+	font-family: Montserrat, sans-serif;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1px;
+	float: right;
+}
+
+														/* DATA */
+
+
+.form-data {
+	float: right;
+	overflow: hidden;
+}
+
+.form-line {
+	border-top: 1px solid white;
+}
+
+.modal-list {
+
+}
+
+.modal-list li{
+	padding: 20px 0px;
+	min-width: 650px;
+}
+
+.modal-inputs {
+	width: 321px;
+	float: right;
+	position: relative;
+	right: 50px;
+	margin-left: 30px;
+}
+
+.modal-label-input {
+	margin: 20px 0px;
+}
+
+.modal-list .modal-labels {
+	float: right;
+	text-align: left;
+	color: white;
+	margin-right: 50px;
+	padding-top: 2px;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 4px;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.modal-inputs, .modal-labels {
+	margin-top: 10px;
+}
+
+.modal-inputs__special, .modal-labels__special {
+	margin-bottom: 20px;
+}
+
+														/* LEFT PARAGRAPHS */
+
+.modal-list-p {
+	margin-top: 40px;
+	min-width: 300px;
+}
+
+.modal-list-p li {
+	color: white;
+	font-family: Montserrat, sans-serif;
+	float: left;
+	margin-top: 10px;
+}
+
+.modal-list-p-2 {
+	padding-top: 30px;
+}
+
+.modal-list-p-3 {
+	padding-top: 85px;
+}
+
+.modal-list-p-4 {
+	padding-top: 110px;
+}
+
+.modal-list-p-5 {
+	padding-top: 86px;
+}
+
+														/* SUBMIT BUTTON */
+
+.modal-submit {
+	float: right;
+	position: relative;
+	right: 16%;
+	margin-top: 20px;
+	clear: both;
+}
+
+.modal-enviar-datos {
+	border: 1px solid white;
+	font-family: Montserrat;
+	text-align: center;
+	letter-spacing: 3px;
+	color: white;
+	background: green;
+	padding: 7px 13px;
+}
+
+.modal-enviar-datos:hover {
+	cursor: pointer;
+	background: rgba(0,141,58,1);
+	box-shadow: 2px 2px 2px black;
+	text-shadow: 1px 1px black;
+}
+
+.modal-enviar-datos:active {
+	cursor: pointer;
+	background: rgba(0,141,58,1);
+	box-shadow: none;
+	text-shadow: none;
+}
+
+
+
+
+
+
