@@ -152,18 +152,37 @@
         <p>Creemos en los desafíos y nos obligamos a superar continuamente nuestro horizonte en busca de la completa satisfacción y tranquilidad del cliente. Nuestros resultados son fruto del compromiso y la dedicación permanente.
         En Sens serás atendido por personas comprensivas y serviciales que te escucharán, entenderán y valorarán; asesores que asumen la responsabilidad de dedicarle profunda atención a tus pedidos para hallar soluciones de manera rápida y precisa, y en definitiva poder llevar la gestión más eficiente.</p>
     </div>
-    <div class="blue-images">
-        <div class="blu-images__container">
+    <div class="blue-images row">
+        <div class='col-md-3'></div>
+		<div id='del-viso' class="blu-images__container col-md-3">
             <div class="blue-images__delviso">
+                <div class="wrapper">
+    				<div class="text">
+        			<p class="address-title">DIRECCIÓN</p>
+        			<p>Av. Constitución 546</p>
+        			<p>Del Viso</p>
+   					 </div>
+				    <img class='sucur-img' src="img/DelViso.png">
+				</div>
 
-            </div>
-        </div>
-        <div class="blu-images__container">
-            <div class="blue-images__derqui">
-            </div>
-        </div>
-    </div>
-
+				<h3>DEL VISO</h3>
+			</div>
+		</div>
+		<div id='derqui' class="blu-images__container col-md-3">
+			<div class="blue-images__derqui">
+				<div class="wrapper">
+    				<div class="text">
+        			<p class="address-title">DIRECCIÓN</p>
+        			<p>Av. Juan D. Perón 2200</p>
+        			<p>Derqui</p>
+   					 </div>
+    				<img class='sucur-img' src="img/Derqui.png">
+				</div>
+				<h3>DERQUI</h3>
+			</div>
+		</div>
+        <div class='col-md-3'></div>
+	</div>
                                                         <!-- MAPS -->
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13160.977251457956!2d-58.78535017431141!3d-34.445945619523776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc993fb6f5b121%3A0x3946b374735be9b3!2sDel+Viso%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1412342785615" width="100%" height="350" frameborder="0" style="border:0"></iframe>
@@ -173,14 +192,14 @@
 
     <div id="contact">
         <h3>INFORMACIÓN</h3>
-        <div class="contact__phone">
-            <p class="ion-ios7-telephone"></p>
-        </div>
-        <p class="phone-number">+54 11 3571-7166</p>
-        <div class="contact__mail-icon">
-            <p class="ion-android-mail"></p>
-        </div>  
-        <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
+            <div class="contact__phone">
+                <p class="ion-ios7-telephone"></p>
+            </div>
+            <p class="phone-number">+54 11 3571-7166</p>
+            <div class="contact__mail-icon">
+                <p class="ion-android-mail"></p>
+            </div>  
+            <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
     </div>
 
                                                     <!-- FOOTER -->
@@ -193,7 +212,7 @@
                 <li><a onClick="goToByScroll('page1'); return false;" href="#">Inicio</a></li>
             </ul>
     </footer>   
-    <?php include('./includes/modal.php') ?>
+    <?php include('includes/modal.php') ?>
     <script>seguros();</script>
     </div>
  </body>
