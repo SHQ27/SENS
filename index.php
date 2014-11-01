@@ -190,16 +190,35 @@
 
                                                     <!-- CONTACTO -->
 
-    <div id="contact">
-        <h3>INFORMACIÓN</h3>
-            <div class="contact__phone">
-                <p class="ion-ios7-telephone"></p>
+    <div id="contact" class='row'>
+        <div class='col-md-2'></div>
+        <div class='col-md-8'>
+            <h3>INFORMACIÓN</h3>
+            <div class='row contacto-row'>
+                <div class='col-md-4'>
+                    <div class="contact__phone">
+                       <p class="ion-ios7-telephone"></p>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <p class="phone-number">+54 11 3571-7166</p>
+                </div>
+                <div class='col-md-4'>
+                </div>
             </div>
-            <p class="phone-number">+54 11 3571-7166</p>
-            <div class="contact__mail-icon">
-                <p class="ion-android-mail"></p>
-            </div>  
-            <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
+            <div class='row contacto-row'>
+                <div class='col-md-4'>
+                    <div class="contact__mail-icon">
+                        <p class="ion-android-mail"></p>
+                    </div> 
+                </div>
+                <div class='col-md-4'> 
+                    <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
+                </div>
+            </div>
+            <div class='col-md-4'></div>
+        </div>
+        <div class='col-md-2'></div>
     </div>
 
                                                     <!-- FOOTER -->
