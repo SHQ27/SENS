@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/index.css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,800,700,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/slider/nivo-slider.css">
         <link rel="stylesheet" href="css/infoseguros.css">
         <link rel="stylesheet" href="css/modal1.css">
@@ -19,10 +18,12 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/index.js"></script>
         <script src="js/seguros.js"></script>
+        <script type="text/javascript" src="js/contacto.js"></script>
     </head>
     <body>
     <header>
-    <div id='global-container'>
+                                                <!-- BLUE BAR TOP -->
+
     <div class="top-blue">
         <p class="info-sensgroup">info@sensgroup.com.ar</p>
         <p class="phone-number">(02320)479-460</p>
@@ -33,13 +34,15 @@
             <li class="ion-android-mail"></li>
         </ul>
     </div>
+
     <!-- NAVBAR -->
+
     <div class="pos-fixed">
         <div class="nav-bar">
             <a href="index.php"><img id="logo_sens" src="img/logosens1.png"></a>
             <ul class="menu_buttons">
                 <li class="menu menu--sinister"><a data-toggle='modal' data-target='#sinisterModal' id='sinister-link' class="sinisterlink" href="#!"><span class="sue-sinister">DENUNCIÁ</span><br/>TU SINIESTRO</a></li>
-                <li class='menu grow'><a onClick="goToByScroll('contact'); return false;" href="#">INFORMACIÓN</a></li>
+                <li class='menu grow'><a onClick="goToByScroll('contact'); return false;" href="#">CONTACTO</a></li>
                 <li class='menu grow'><a onClick="goToByScroll('seguros-section'); return false;" href="#">SEGUROS</a></li>
                 <li class='menu grow'><a onClick="goToByScroll('contact-form-section'); return false;" href="#">COTIZAR SEGURO</a></li>
                 <li class='menu grow'><a onClick="goToByScroll('page1'); return false;" href="#">INICIO</a></li>
@@ -56,7 +59,44 @@
             <a href="#"><img src="img/slider/img_2.jpg" alt="slide 2" /></a>
             <a href="#"><img src="img/slider/img_3.jpg" alt="slide 3" /></a>
         </div>
+
+                                                    <!--SELECTS -->
+
+        <div class="select">
+        <h1>COTIZÁ TU SEGURO ONLINE AHORA!</h1>
+        <p class="select-subtitle">Al clickear en "Cotizar Seguro" recibirá un llamado por parte de uno de nuestros agentes en un horario que usted elija.</p>
+        <div class="select-seguros">
+            <img class="select-car"src="img/car.png">
+            <ul>
+                <li>
+                    <select id="select-brand" class="select-inputs">
+                        <option class="select-options">Marca</option>
+                    </select>
+                </li>
+                <li>
+                    <select  id="select-model" class="select-inputs">
+                        <option class="select-options">Modelo</option>
+                    </select>
+                </li>
+                <li>
+                    <select  id="select-submodel" class="select-inputs">
+                        <option class="select-options">Submodelo</option>
+                    </select>
+                </li>
+                <li>
+                    <select  id="select-year" class="select-inputs">
+                        <option class="select-options">Año</option>
+                    </select>
+                </li>
+                <li>            
+                    <p class="select-cotizar">COTIZAR SEGURO</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
         <!-- HIRE -->
+
         <div class='section-division'></div>
         <div id="hire-container" class='text-center'>
         </div>
@@ -67,12 +107,12 @@
         <div class='section-division'></div>
         <div class='content blue-content'>
             <form class='form-cotizar'>
-                <p>Ingresá tus datos</p>
-                <input type='text' class='form-control' placeholder='Nombre y apellido'/>
-                <input type='text' class='form-control' placeholder='Teléfono'/>
-                <input type='text' class='form-control' placeholder='Celular'/>
-                <input type='text' class='form-control' placeholder='E-mail'/>
-                <input type='text' class='form-control' placeholder='Horario de contacto'/>
+                <p id="jq-contactanos">Contactanos</p>
+                <input type='text' class='form-control' id="hire-name" placeholder='Nombre y apellido'/>
+                <input type='text' class='form-control' id="hire-mail" placeholder='E-mail'/>
+                <input type='text' class='form-control' id="hire-phone" placeholder='Teléfono'/>
+                <input type='text' class='form-control' id="hire-cell" placeholder='Celular'/>
+                <input type='text' class='form-control' id="hire-time" placeholder='Horario de Contacto'/>
                 <input type='submit'class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' />
             </form>
             <p class='cotizar-msg'>Uno de nuestros agentes se comunicará contigo a la brevedad.</p>
@@ -108,6 +148,7 @@
             </ul>
         </div>
     </div>
+
 
     <div id='seguros-section'></div>
     <div id='seguros' class='row'>
@@ -192,7 +233,7 @@
     <div id="contact" class='row'>
         <div class='col-md-2'></div>
         <div class='col-md-8'>
-            <h3>INFORMACIÓN</h3>
+            <h3>CONTACTANOS</h3>
             <div class='row contacto-row'>
                 <div class='col-md-4'>
                     <div class="contact__phone">
@@ -200,7 +241,7 @@
                     </div>
                 </div>
                 <div class='col-md-4'>
-                    <p class="phone-number">+54 11 3571-7166</p>
+                    <p class="phone-number">02320-666502 | 0230-4315404 | 011-5218-3039</p>
                 </div>
                 <div class='col-md-4'>
                 </div>
@@ -212,7 +253,7 @@
                     </div>
                 </div>
                 <div class='col-md-4'>
-                    <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
+                    <p class="contact__mail-text">info@sensgroup.com.ar</p>
                 </div>
             </div>
             <div class='col-md-4'></div>
@@ -232,6 +273,7 @@
     </footer>
     <?php include_partial('home/modal') ?>
     <script>seguros();</script>
+    <script>contacto();</script>
     </div>
  </body>
 </html>

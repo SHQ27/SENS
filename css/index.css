@@ -44,8 +44,22 @@
     font-weight: 1;
 }
 
-.form-cotizar input {
+.form-control {
+    text-align: center;
     margin-bottom: 10px;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    text-align: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    background: green;
+    padding: 7px 13px;
+    border-radius: 2px;
 }
 
 .cotizar-submit {
@@ -315,16 +329,22 @@ hr{
 }
 
                                                 /* BUTTONS */
-
 .buttons {
     position: relative;
-    height: 200px;
+    padding-bottom: 70px;
 }
 
 .buttons_container {
-    position: absolute;
+    padding-top: 30px;
     text-align: center;
-    margin-top: 90px;
+    position: absolute;
+    left: 50%;
+    width: 1200px;
+    -webkit-transform: translate(-50%, 0%); 
+    -moz-transform: translate(-50%, 0%); 
+    -o-transform: translate(-50%, 0%); 
+    -ms-transform: translate(-50%, 0%); 
+    transform: translate(-50%, 0%); 
 }
 
 .buttons_container ul {
@@ -336,7 +356,7 @@ hr{
 
 .buttons_container ul li {
     display: inline-block;
-    padding: 10px 35px;
+    padding: 10px 25px;
 }
 
 .buttons_container ul li p{
@@ -350,6 +370,7 @@ hr{
     width: 100px;
     height: 100px;
 }
+
 
                                             /* QUIÉNES SOMOS */
 
@@ -706,7 +727,170 @@ footer ul li{
     padding-top: 45px;
 }
 
-#del-viso{
-    
+                                            /* SELECT SEGUROS */
 
+.select {
+    min-width: 1420px;
+}
+.select h1 {
+    color: #003E7E; 
+    font-size: 37px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.select-subtitle {
+    text-align: center;
+    color: black;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+}
+
+.select-seguros {
+    min-width: 1500px;
+    overflow: hidden;
+    width: 75%;
+    min-width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 100px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    padding-left: 30px;
+}
+
+.select-car {
+    float: left;
+    position: relative;
+    top: 33px;
+    left: 15px;
+    width: 40px;
+    height: 33px;
+    margin-right: 10px;
+    opacity: 0.9;
+}
+
+.select-car:hover {
+    opacity: 1;
+}
+
+.select-seguros ul {
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.select-seguros ul li{
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.div-selects {
+    width: 120px;
+    padding-bottom: 15px;
+    padding: 10px;
+}
+
+.select-year__special {
+    padding: 15px;
+    margin: 15px;
+}
+
+.select-cotizar {
+    margin-left: 25px;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    background: green;
+    padding: 7px 13px;
+    border-radius: 2px;
+}
+
+.select-cotizar:hover {
+    cursor: pointer;
+    background: rgba(0,141,58,1);
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px black;
+}
+
+.select-cotizar:active {
+    cursor: pointer;
+    background: rgba(0,141,58,1);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+                                            /* SELECT STYLES */
+
+.select-inputs {
+    width: 130px;
+    font-size: 13px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 33px;
+    color: #003E7E;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+}
+
+                                            /* TOP BLUE BAR */
+
+.top-blue {
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    min-width: 700px;
+}
+
+.info-sensgroup{
+    margin: 0 auto;
+    padding-top: 6px;
+    padding-left: 70px;
+    font-family: Montserrat;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.phone-number {
+    float: right;
+    margin-right: 35px;
+    font-family: Montserrat;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 13px;
+    position: relative;
+    bottom: 2px;
+}
+
+#phone_list {
+    float: right;
+    margin-right: 15px;
+    font-size: 22px;
+    color: white;
+    margin-top: -19px;
+}
+
+#mail_list {
+    font-size: 18px;
+    color: white;
+    margin-top: -18px;
+    padding-right: 10px;
+}
+
+.ion-android-mail {
+    position: relative;
+    bottom: 4px;
+}
+
+.ion-ios7-telephone {
+    position: relative;
+    bottom: 6px;
 }
