@@ -1,0 +1,127 @@
+Nov 06 03:01:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Nov 06 03:01:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 06 03:01:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 06 03:01:21 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Nov 06 03:01:21 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Nov 06 03:01:21 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:01:21 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:01:21 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:01:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 06 03:01:21 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:01:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 06 03:01:21 symfony [info] {sfWebDebugLogger} Configuration 93.00 ms (9)
+Nov 06 03:01:21 symfony [info] {sfWebDebugLogger} Factories 100.02 ms (1)
+Nov 06 03:01:21 symfony [info] {sfWebDebugLogger} Action "default/index" 0.17 ms (1)
+Nov 06 03:01:21 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 18.75 ms (1)
+Nov 06 03:01:21 symfony [info] {sfWebResponse} Send content (29842 o)
+Nov 06 03:04:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Nov 06 03:04:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 06 03:04:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 06 03:04:16 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Nov 06 03:04:16 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Nov 06 03:04:16 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:04:16 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:04:16 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:04:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 06 03:04:16 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:04:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 06 03:04:16 symfony [info] {sfWebDebugLogger} Configuration 1.10 ms (9)
+Nov 06 03:04:16 symfony [info] {sfWebDebugLogger} Factories 36.67 ms (1)
+Nov 06 03:04:16 symfony [info] {sfWebDebugLogger} Action "default/index" 0.17 ms (1)
+Nov 06 03:04:16 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.82 ms (1)
+Nov 06 03:04:16 symfony [info] {sfWebResponse} Send content (29840 o)
+Nov 06 03:22:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Nov 06 03:22:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 06 03:22:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 06 03:22:37 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Nov 06 03:22:37 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Nov 06 03:22:37 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:22:37 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:22:37 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:22:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 06 03:22:37 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:22:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 06 03:22:37 symfony [info] {sfWebDebugLogger} Configuration 1.67 ms (9)
+Nov 06 03:22:37 symfony [info] {sfWebDebugLogger} Factories 55.97 ms (1)
+Nov 06 03:22:37 symfony [info] {sfWebDebugLogger} Action "default/index" 0.23 ms (1)
+Nov 06 03:22:37 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 18.37 ms (1)
+Nov 06 03:22:37 symfony [info] {sfWebResponse} Send content (30768 o)
+Nov 06 03:22:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Nov 06 03:22:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 06 03:22:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 06 03:22:39 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Nov 06 03:22:39 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Nov 06 03:22:39 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:22:39 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:22:39 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:22:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 06 03:22:39 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:22:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 06 03:22:39 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (9)
+Nov 06 03:22:39 symfony [info] {sfWebDebugLogger} Factories 37.67 ms (1)
+Nov 06 03:22:39 symfony [info] {sfWebDebugLogger} Action "default/index" 0.19 ms (1)
+Nov 06 03:22:39 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 14.74 ms (1)
+Nov 06 03:22:39 symfony [info] {sfWebResponse} Send content (30767 o)
+Nov 06 03:22:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Nov 06 03:22:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 06 03:22:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 06 03:22:48 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Nov 06 03:22:48 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Nov 06 03:22:48 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:22:48 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Nov 06 03:22:48 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:22:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 06 03:22:48 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 06 03:22:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 06 03:22:48 symfony [info] {sfWebDebugLogger} Configuration 83.53 ms (9)
+Nov 06 03:22:48 symfony [info] {sfWebDebugLogger} Factories 86.29 ms (1)
+Nov 06 03:22:48 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+Nov 06 03:22:48 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 15.02 ms (1)
+Nov 06 03:22:48 symfony [info] {sfWebResponse} Send content (30769 o)
+Nov 07 02:09:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 07 02:09:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 07 02:09:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 07 02:09:14 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 07 02:09:14 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 07 02:09:14 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 07 02:09:14 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 07 02:09:14 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 07 02:09:14 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/exception/sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 07 02:09:14 symfony [err] {sfRenderException} The template "_modal.php.php" does not exist or is unreadable in "".
+Nov 07 02:09:14 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/exception/sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 07 02:09:14 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 07 02:09:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Nov 07 02:09:14 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 07 02:09:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Configuration 93.38 ms (9)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Factories 95.58 ms (1)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Action "home/index" 0.18 ms (1)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 60.43 ms (1)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 0.55 ms (1)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.50 ms (1)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.46 ms (1)
+Nov 07 02:09:14 symfony [info] {sfWebDebugLogger} Partial "home/_modal.php" 43.57 ms (1)
+Nov 07 02:09:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 07 02:09:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 07 02:09:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 07 02:09:33 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 07 02:09:33 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 07 02:09:33 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 07 02:09:33 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 07 02:09:33 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 07 02:09:33 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/modules/home/templates/_modal.php"
+Nov 07 02:09:33 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENSsf/apps/frontend/templates/layout.php"
+Nov 07 02:09:33 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENSsf/apps/frontend/templates/layout.php"
+Nov 07 02:09:33 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 07 02:09:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 07 02:09:33 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENSsf/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 07 02:09:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Factories 35.85 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Action "home/index" 0.22 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 19.63 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 0.62 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.49 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.46 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 1.10 ms (1)
+Nov 07 02:09:33 symfony [info] {sfWebResponse} Send content (63865 o)
