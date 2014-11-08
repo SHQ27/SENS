@@ -1,0 +1,7 @@
+Cars:
+  actAs: { Timestampable: ~ }
+  columns:
+    brand: { type: string(255), notnull: true }
+    model: { type: string(255), notnull: true }
+    submodel: { type: string(255), notnull: true }
+    year: { type: timestamp, notnull: true }
