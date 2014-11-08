@@ -125,3 +125,99 @@ Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav"
 Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.46 ms (1)
 Nov 07 02:09:33 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 1.10 ms (1)
 Nov 07 02:09:33 symfony [info] {sfWebResponse} Send content (63865 o)
+Nov 08 10:13:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 08 10:13:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 08 10:13:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 08 10:13:37 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 08 10:13:37 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 08 10:13:37 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 08 10:13:37 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 08 10:13:37 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 08 10:13:37 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_modal.php"
+Nov 08 10:13:37 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 10:13:37 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 10:13:37 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 10:13:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 08 10:13:37 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 10:13:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Configuration 48.78 ms (10)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Factories 78.62 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Action "home/index" 0.18 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 19.16 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 0.96 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.81 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.53 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 0.57 ms (1)
+Nov 08 10:13:37 symfony [info] {sfWebResponse} Send content (65177 o)
+Nov 08 20:19:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 08 20:19:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 08 20:19:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 08 20:19:13 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 08 20:19:13 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 08 20:19:13 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 08 20:19:13 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 08 20:19:13 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 08 20:19:13 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_modal.php"
+Nov 08 20:19:13 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 20:19:13 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 20:19:13 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 20:19:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 08 20:19:13 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 20:19:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Configuration 105.47 ms (9)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Factories 95.68 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Action "home/index" 0.18 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 20.77 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 1.05 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.73 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.50 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 0.56 ms (1)
+Nov 08 20:19:13 symfony [info] {sfWebResponse} Send content (65062 o)
+Nov 08 20:49:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 08 20:49:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 08 20:49:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 08 20:49:05 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 08 20:49:05 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 08 20:49:05 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 08 20:49:05 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 08 20:49:05 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 08 20:49:05 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 20:49:05 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 20:49:05 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_modal.php"
+Nov 08 20:49:05 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 20:49:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 08 20:49:05 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 20:49:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Configuration 99.32 ms (9)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Factories 80.94 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Action "home/index" 0.17 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 17.34 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 0.55 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.47 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.56 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 0.56 ms (1)
+Nov 08 20:49:05 symfony [info] {sfWebResponse} Send content (82341 o)
+Nov 08 20:49:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 08 20:49:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 08 20:49:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 08 20:49:55 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 08 20:49:55 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 08 20:49:55 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 08 20:49:55 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 08 20:49:55 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 08 20:49:55 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_modal.php"
+Nov 08 20:49:55 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 20:49:55 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/templates/layout.php"
+Nov 08 20:49:55 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 20:49:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 08 20:49:55 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 08 20:49:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Configuration 1.43 ms (9)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Factories 36.24 ms (1)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Action "home/index" 0.21 ms (1)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 16.88 ms (1)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 0.62 ms (1)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.45 ms (1)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 0.46 ms (1)
+Nov 08 20:49:55 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 0.83 ms (1)
+Nov 08 20:49:56 symfony [info] {sfWebResponse} Send content (65146 o)

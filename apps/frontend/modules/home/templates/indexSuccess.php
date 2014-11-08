@@ -64,7 +64,6 @@
 
         <div class="select">
         <h1>COTIZÁ TU SEGURO ONLINE AHORA!</h1>
-        <p class="select-subtitle">Al clickear en "Cotizar Seguro" recibirá un llamado por parte de uno de nuestros agentes en un horario que usted elija.</p>
         <div class="select-seguros">
             <img class="select-car"src="img/car.png">
             <ul>

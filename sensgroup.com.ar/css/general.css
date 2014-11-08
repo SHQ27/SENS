@@ -1,0 +1,118 @@
+.top-blue {
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    min-width: 700px;
+}
+
+.top-blue .info-sensgroup{
+    margin: 0 auto;
+    padding-top: 6px;
+    padding-left: 70px;
+    font-family: Montserrat;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.top-blue .phone-number {
+    float: right;
+    margin-right: 30px;
+    margin-top: -16px;
+    font-family: Montserrat;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+/* NAVBAR */
+header {
+    width: 100%;
+    z-index: 500;
+    display: block;
+    position: fixed;
+}
+
+.nav-bar {
+    min-width: 850px;
+    height: 120px;
+    padding-top: 20px;
+    padding-left: 32px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.nav-bar #logo_sens {
+    width: 227px;
+    height: 71px;
+}
+
+.menu_buttons {
+    margin-right: 35px;
+    margin-top: 35px;
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.grow:hover {
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg);
+}
+
+.nav-bar .menu {
+    list-style: none;
+    float: right;
+    color: #002D5C;
+    font-size: 15px;
+    padding-right: 40px;
+    font-family: Raleway;
+    letter-spacing: 2px;
+    margin-top: -5px;
+}
+
+.nav-bar .menu--sinister {
+    color: inherit;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    background-size: 80px 60px;
+    background: -webkit-linear-gradient(#003E7E,#002B5F);
+    color: white;
+}
+
+
+.sinisterlink {
+    color: inherit;
+}
+
+.sinisterlink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-bar .menu--sinister:hover {
+    cursor: pointer;
+    background: rgba(0,45,120,1);
+    box-shadow: 0px 0px 1px black;
+}
+
+.nav-bar .menu--sinister .sue-sinister {
+    font-size: 15px;
+    font-weight: bold;
+}
+

@@ -5,9 +5,16 @@ sfCoreAutoload::register();
 
 class ProjectConfiguration extends sfProjectConfiguration
 {
-  public function setup()
-  {
-    $this->enablePlugins('sfDoctrinePlugin');
-    $this->enablePlugins('sfDoctrineGuardPlugin');
-  }
+	public function setup()
+	{
+		$this->enablePlugins('sfDoctrinePlugin');
+		$this->enablePlugins('sfDoctrineGuardPlugin');
+	}
+	
+	public function setRootDir($rootDir)
+	{
+		parent::setRootDir($rootDir);
+
+		$this->setWebDir($rootDir . DIRECTORY_SEPARATOR . 'sensgroup.com.ar');
+	}
 }
