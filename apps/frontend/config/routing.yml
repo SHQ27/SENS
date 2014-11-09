@@ -5,3 +5,7 @@
 homepage:
   url:   /
   param: { module: home, action: index }
+
+home_ajax:
+  url:   /home/ajax
+  param: { module: home, action: ajax }

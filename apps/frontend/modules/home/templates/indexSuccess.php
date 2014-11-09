@@ -105,15 +105,15 @@
     <div id='contact-form'>
         <div class='section-division'></div>
         <div class='content blue-content'>
-            <form class='form-cotizar'>
+            <div class='form-cotizar'>
                 <p id="jq-contactanos">Contactanos</p>
                 <input type='text' class='form-control' id="hire-name" placeholder='Nombre y apellido'/>
                 <input type='text' class='form-control' id="hire-mail" placeholder='E-mail'/>
                 <input type='text' class='form-control' id="hire-phone" placeholder='Teléfono'/>
                 <input type='text' class='form-control' id="hire-cell" placeholder='Celular'/>
                 <input type='text' class='form-control' id="hire-time" placeholder='Horario de Contacto'/>
-                <input type='submit'class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' />
-            </form>
+                <button id='hire-submit' class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' /> COTIZAR SEGURO</button>
+            </div>
             <p class='cotizar-msg'>Uno de nuestros agentes se comunicará contigo a la brevedad.</p>
         </div>
     </div>

@@ -7,6 +7,12 @@ var contacto = function() {
     }
 
     this.setListeners = function() {
+    	self.setCotizarListeners();
+    	self.setSubmitListeners();
+
+	}
+
+	this.setCotizarListeners = function() {
 	 	$('.select-cotizar').click(function(){
 	 		$('#jq-contactanos').fadeOut('fast');
 	 		$('#jq-contactanos').fadeIn();
@@ -15,46 +21,55 @@ var contacto = function() {
 		}, 300);
 	 		goToByScroll('contact-form-section');
     	});
+	}
+
+	this.setSubmitListeners = function() {
+		$('#hire-submit').click(function(){ 
+			var name = $('#hire-name');
+			var mail = $('#hire-mail');
+			var phone = $('#hire-phone');
+			var cell = $('#hire-cell');
+			var time = $('#hire-time');
+			var errors = 0;
+			var requestURL = '';
+			
+			var fields = [name, mail, phone, cell, time];
+			
+			for (i in fields) {
+				if (fields[i].val() == '' || fields[i].val().match('script') ) {
+					fields[i].css('border', '2px solid red');
+					errors += 1;
+				} else if (i != 0) {
+					fields[i].css('border', 'none');
+					requestURL += '&' + fields[i].attr('id') + '=' + fields[i].val();; 
+				} else {
+					fields[i].css('border', 'none');
+					requestURL += fields[i].attr('id') + '=' + fields[i].val();
+				}
+			}
+			if (errors) {
+				return false;	
+			}
+
+  			$.ajax({
+            	type: "POST",
+            	url: "/home/ajax?method=contactForm",
+	            dataType: "json",
+    	        data: requestURL,
+        	    success: function(results){
+            	    $('.cotizar-msg').fadeIn();
+            	},
+            	complete: function() {
+            	}
+        	});
+
+        });
+		
 
 	}
 
     this.init();
-
-//     function validar () {
-//     		var errors = [];
-
-//     	var name = $('#hire-name');
-//     	var mail = $('#hire-mail');
-//     	var phone = $('#hire-phone');
-//     	var cell = $('#hire-cell');
-//     	var time = $('#hire-time');
-
-//     	if(!isNaN(name.value) || name.value.length < 3) {
-//     		errors = "Ingresá un nombre válido.";
-//     		$('#' + name.id).css('border', '1px solid red');
-//     		showErrors();
-//     	}
-//     	if(!isNaN(mail.value) || mail.value.length < 10) {
-//     		errors = "Ingresá un mail válido.";
-//     		$('#' + mail.id).css('border', '1px solid red');
-//     		showErrors();
-//     	}
-//     	if(isNaN(phone.value) || phone.value.length < 8) {
-//     		errors = "Ingresá un teléfono válido.";
-//     		$('#' + phone.id).css('border','1px solid red');
-//     		showErrors();
-//     	}
-//     	if(isNaN(cell.value) || cell.value.length < 10) {
-//     		errors = "Ingresá un Celular válido";
-//     		$('#' + cell.id).css('border', '1px solid red');
-//     	}	
-//     }
-
-// function showErrors(){
-// 	parr = document.createElement('p');
-// 	text = document.createTextNode(errors);
-// 	parr.appendChild(text);
-// 	document.body.appendChild(parr);
-// 	$(parr).css('color', 'red');
-// }
 }
+
+
+
