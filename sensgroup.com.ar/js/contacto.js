@@ -33,20 +33,32 @@ var contacto = function() {
 			var errors = 0;
 			var requestURL = '';
 			
-			var fields = [name, mail, phone, cell, time];
+			var reqFields = [name, mail, phone];
+			var optFields = [cell, time];
 			
-			for (i in fields) {
-				if (fields[i].val() == '' || fields[i].val().match('script') ) {
-					fields[i].css('border', '2px solid red');
+			for (i in reqFields) {
+				if (reqFields[i].val() == '' || reqFields[i].val().match('script') ) {
+					reqFields[i].css('border', '2px solid red');
 					errors += 1;
 				} else if (i != 0) {
-					fields[i].css('border', 'none');
-					requestURL += '&' + fields[i].attr('id') + '=' + fields[i].val();; 
+					reqFields[i].css('border', 'none');
+					requestURL += '&' + reqFields[i].attr('id') + '=' + reqFields[i].val(); 
 				} else {
-					fields[i].css('border', 'none');
-					requestURL += fields[i].attr('id') + '=' + fields[i].val();
+					reqFields[i].css('border', 'none');
+					requestURL += reqFields[i].attr('id') + '=' + reqFields[i].val();
 				}
 			}
+
+			for (i in optFields) {
+				if (optFields[i].val().match('script') ) {
+					optFields[i].css('border', '2px solid red');
+					errors += 1;
+				} else {
+					optFields[i].css('border', 'none');
+					requestURL += '&' + optFields[i].attr('id') + '=' + optFields[i].val();
+				}
+			}
+
 			if (errors) {
 				return false;	
 			}

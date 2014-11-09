@@ -18,6 +18,7 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/index.js"></script>
         <script src="js/seguros.js"></script>
+        <script src="js/siniestro.js"></script>
         <script type="text/javascript" src="js/contacto.js"></script>
     </head>
     <body>
@@ -273,6 +274,7 @@
     <?php include_partial('home/modal') ?>
     <script>seguros();</script>
     <script>contacto();</script>
+    <script>siniestro();</script>
     </div>
  </body>
 </html>

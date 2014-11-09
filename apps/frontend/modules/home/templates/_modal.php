@@ -19,7 +19,7 @@
                                         <label class="modal-labels">Fecha y Horario</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='tc-date' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -27,7 +27,7 @@
                                         <label class="modal-labels">Localidad y Dirección</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='tc-address' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                         <label class="modal-labels">Nombre y Apellido</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='cvp-name' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -51,7 +51,7 @@
                                         <label class="modal-labels">D.N.I</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='cvp-du' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -59,7 +59,7 @@
                                         <label class="modal-labels">Domicilio</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='cvp-address' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -67,7 +67,7 @@
                                         <label class="modal-labels">Teléfono</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='cvp-phone' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                         <label class="modal-labels">Nombre y Apellido</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='tes-name' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -90,7 +90,7 @@
                                         <label class="modal-labels">D.N.I</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='tes-du' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -98,7 +98,7 @@
                                         <label class="modal-labels">Domicilio</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='tes-address' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -106,7 +106,7 @@
                                         <label class="modal-labels">Teléfono</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='tes-phone' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                                         <label class="modal-labels">Nombre y Apellido</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='iv-name' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -129,7 +129,7 @@
                                         <label class="modal-labels">D.N.I</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='iv-du' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -137,7 +137,7 @@
                                         <label class="modal-labels">Domicilio</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='iv-address' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -145,7 +145,7 @@
                                         <label class="modal-labels">Teléfono</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='iv-phone' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                                         <label class="modal-labels">Nombre y Apellido</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='ins-name' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -168,7 +168,7 @@
                                         <label class="modal-labels">D.N.I</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='ins-du' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -176,7 +176,7 @@
                                         <label class="modal-labels">Domicilio</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='ins-address' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -184,7 +184,7 @@
                                         <label class="modal-labels">Teléfono</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='ins-phone' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@
                                         <label class="modal-labels">Número de póliza</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='ins-number' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                                 <div class='row'>
@@ -206,14 +206,15 @@
                                         <label class="modal-labels">Vencimiento</label>
                                     </div>
                                     <div class='col-md-7 sub-section'>
-                                        <input class="modal-inputs" type="text"></br>
+                                        <input id='ins-expire' class="modal-inputs" type="text"></br>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                			<input type='submit' class="modal-enviar-datos" value='Enviar datos' />
+                            <p class='synyster-msg pull-left'>Uno de nuestros agentes se comunicará contigo a la brevedad.</p>
+                			<button id='synyster-submit' class="modal-enviar-datos" />Enviar datos</button>
                     </div>
                 </div>
             </div>

@@ -72,11 +72,6 @@ ul {
 .modal-inputs {
     width: 100%;
 }
-
-														/* LEFT PARAGRAPHS */
-
-
-
 														/* SUBMIT BUTTON */
 
 .modal-enviar-datos {
@@ -101,6 +96,16 @@ ul {
 	background: rgba(0,141,58,1);
 	box-shadow: none;
 	text-shadow: none;
+}
+
+.synyster-msg {
+    font-family: Raleway;
+    color: white;
+    color: #E3E3E3;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 13px;
+    display: none;
 }
 
 
