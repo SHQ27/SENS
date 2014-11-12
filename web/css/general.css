@@ -16,16 +16,6 @@
     font-size: 13px;
 }
 
-.top-blue .phone-number {
-    float: right;
-    margin-right: 30px;
-    margin-top: -16px;
-    font-family: Montserrat;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 13px;
-}
-
 /* NAVBAR */
 header {
     width: 100%;

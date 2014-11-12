@@ -9,7 +9,7 @@ var contacto = function() {
     this.setListeners = function() {
     	self.setCotizarListeners();
     	self.setSubmitListeners();
-
+    	self.setSelectListeners();
 	}
 
 	this.setCotizarListeners = function() {
@@ -30,11 +30,16 @@ var contacto = function() {
 			var phone = $('#hire-phone');
 			var cell = $('#hire-cell');
 			var time = $('#hire-time');
+			var brand = $('#select-brand');
+			var model = $('#select-model');
+			var submodel = $('#select-submodel');
+			var year = $('#hire-year');
+
 			var errors = 0;
 			var requestURL = '';
 			
 			var reqFields = [name, mail, phone];
-			var optFields = [cell, time];
+			var optFields = [cell, time, brand, model, submodel, year];
 			
 			for (i in reqFields) {
 				if (reqFields[i].val() == '' || reqFields[i].val().match('script') ) {
@@ -78,6 +83,54 @@ var contacto = function() {
         });
 		
 
+	}
+
+	self.setSelectListeners = function() {
+		$('#select-brand').change(function(){
+			var brand = $('#select-brand option:selected').val();
+			$.ajax({
+            	type: "POST",
+            	url: "/home/ajax?method=getModels",
+	            dataType: "json",
+    	        data: 'brand=' + brand,
+        	    success: function(results){
+        	    	$('#select-model').find('option').remove();
+        	    	$('#select-submodel').find('option').remove();
+        	    	for (var i = results.models.length - 1; i >= 0; i--) {
+        	    		$('#select-model').append("<option value='" + results.models[i] + "'>" + results.models[i] + "</option>");
+        	    	};
+        	    	$('#select-model option:eq(1)').prop('selected', true);
+        	    	$('#select-model').trigger("change");
+            	},
+            	complete: function() {
+            	}
+        	});
+		});
+
+		$('#select-model').change(function(){
+			var model = $('#select-model option:selected').val();
+			var brand = $('#select-brand option:selected').val();
+
+			if (!model) {
+				return false;
+			}
+
+			$.ajax({
+            	type: "POST",
+            	url: "/home/ajax?method=getSubmodels",
+	            dataType: "json",
+    	        data: 'brand=' + brand + '&model=' + model,
+        	    success: function(results){
+        	    	$('#select-submodel').find('option').remove();
+        	    	for (var i = results.submodels.length - 1; i >= 0; i--) {
+        	    		$('#select-submodel').append("<option value='" + results.submodels[i] + "'>" + results.submodels[i] + "</option>");
+        	    	};
+            	},
+            	complete: function() {
+            	}
+        	});
+
+		});
 	}
 
     this.init();

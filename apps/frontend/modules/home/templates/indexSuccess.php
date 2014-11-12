@@ -27,7 +27,7 @@
 
     <div class="top-blue">
         <p class="info-sensgroup">info@sensgroup.com.ar</p>
-        <p class="phone-number">(02320)479-460</p>
+        <p class="phone-number-top">(02320)479-460</p>
         <ul id="phone_list">
             <li class="ion-ios7-telephone"></li>
         </ul>
@@ -51,26 +51,53 @@
             <div class='clear-both'></div>
         </div>
     </div>
+
     </header>
     <!-- PAGE 1 -->
-    <div id="page1" class="content">
+    <div id="page1" class="text-center">
         <!-- SLIDESHOW -->
-        <div id="slider" class="nivoSlider">
-            <a href="#"><img src="img/slider/img_1.jpg" alt="slide 1" /></a>
-            <a href="#"><img src="img/slider/img_2.jpg" alt="slide 2" /></a>
-            <a href="#"><img src="img/slider/img_3.jpg" alt="slide 3" /></a>
+        <div id="myCarousel" class="carousel slide">
+             <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>   
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class='img-responsive' src="/img/slider/img_4.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img class='img-responsive' src="/img/slider/img_2.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img class='img-responsive' src="/img/slider/img_3.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                    <img class='img-responsive' src="/img/slider/img_1.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
+
 
                                                     <!--SELECTS -->
 
-        <div class="select">
+    <div class="select">
         <h1>COTIZÁ TU SEGURO ONLINE AHORA!</h1>
         <div class="select-seguros">
-            <img class="select-car"src="img/car.png">
-            <ul>
+            <img class="select-car pull-left"src="img/car.png">
+            <ul class='pull-right'>
                 <li>
                     <select id="select-brand" class="select-inputs">
-                        <option class="select-options">Marca</option>
+                        <option class="select-options" value=''>Marca</option>
+                        <?php foreach ($brands as $brand) { ?>
+                        <option value="<?php echo $brand->getBrand() ?>"><?php echo $brand->getBrand() ?></option>
+                        <?php }?>
                     </select>
                 </li>
                 <li>
@@ -84,9 +111,7 @@
                     </select>
                 </li>
                 <li>
-                    <select  id="select-year" class="select-inputs">
-                        <option class="select-options">Año</option>
-                    </select>
+                    <input type='text' id="hire-year" class="year-input" placeholder='Año'>
                 </li>
                 <li>            
                     <p class="select-cotizar">COTIZAR SEGURO</p>
@@ -94,12 +119,11 @@
             </ul>
         </div>
     </div>
+        </div> 
 
         <!-- HIRE -->
 
-        <div class='section-division'></div>
-        <div id="hire-container" class='text-center'>
-        </div>
+    <div class='section-division'></div>
     </div>
     <div id='contact-form-section'></div>
     <!-- PAGE 2 -->
@@ -173,7 +197,7 @@
 
                                                         <!-- QUIÉNES SOMOS -->
     <div class="p-our-beliefs">
-        <h3>SEGUIMOS PROYECTANDO. SEGUIMOS CRECIENDO.</h3>
+        <h3>TU TRANQUILIDAD, NUESTRO COMPROMISO.</h3>
         <div class="security-line"></div>
         <p>Creemos en los desafíos y nos obligamos a superar continuamente nuestro horizonte en busca de la completa satisfacción y tranquilidad del cliente. Nuestros resultados son fruto del compromiso y la dedicación permanente.
         En Sens serás atendido por personas comprensivas/serviciales que te escucharán, entenderán y valorarán; asesores que asumen la responsabilidad de dedicarle profunda atención a tus pedidos para hallar soluciones de manera rápida y precisa, y en definitiva poder llevar la gestión más eficiente.</p>
@@ -201,6 +225,7 @@
                                 <p class="address-title">DIRECCIÓN</p>
                                 <p>Av. Constitución 546</p>
                                 <p>Del Viso</p>
+                                <p>02320-666502</p>
                                          </div>
                                     <img class='sucur-img' src="img/DelViso.png">
                                 </div>
@@ -215,6 +240,7 @@
                                 <p class="address-title">DIRECCIÓN</p>
                                 <p>Av. Juan D. Perón 2200</p>
                                 <p>Derqui</p>
+                                <p>0230-4315404</p>
                                          </div>
                                 <img class='sucur-img' src="img/Derqui.png">
                                 </div>
@@ -230,36 +256,17 @@
 
                                                     <!-- CONTACTO -->
 
-    <div id="contact" class='row'>
-        <div class='col-md-2'></div>
-        <div class='col-md-8'>
+        <div id="contact">
             <h3>CONTACTANOS</h3>
-            <div class='row contacto-row'>
-                <div class='col-md-4'>
-                    <div class="contact__phone">
-                       <p class="ion-ios7-telephone"></p>
-                    </div>
-                </div>
-                <div class='col-md-4'>
-                    <p class="phone-number">02320-666502 | 0230-4315404 | 011-5218-3039</p>
-                </div>
-                <div class='col-md-4'>
-                </div>
+            <div class="contact__phone">
+                <p class="ion-ios7-telephone"></p>
             </div>
-            <div class='row contacto-row'>
-                <div class='col-md-4'>
-                    <div class="contact__mail-icon">
-                        <p class="ion-android-mail"></p>
-                    </div>
-                </div>
-                <div class='col-md-4'>
-                    <p class="contact__mail-text">info@sensgroup.com.ar</p>
-                </div>
-            </div>
-            <div class='col-md-4'></div>
+            <p class="phone-number">+54 11 3571-7166</p>
+            <div class="contact__mail-icon">
+                <p class="ion-android-mail"></p>
+            </div>  
+            <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
         </div>
-        <div class='col-md-2'></div>
-    </div>
 
                                                     <!-- FOOTER -->
     <footer>

@@ -17,6 +17,7 @@ class homeActions extends sfActions
   */
  	public function executeIndex(sfWebRequest $request)
  	{
+    $this->brands = CarsTable::getInstance()->getAllBrands();
  	}
 
     /**
@@ -42,10 +43,10 @@ class homeActions extends sfActions
         $cell = $request->getParameter('hire-cell');
         $time = $request->getParameter('hire-time');
 
-        $brand = '-';
-        $model = '-';
-        $submodel = '-';
-        $year = '-';
+        $brand = $request->getParameter('select-brand');
+        $model = $request->getParameter('select-model');
+        $submodel = $request->getParameter('select-submodel');
+        $year = $request->getParameter('hire-year');
         
         // send an email to the affiliate
         $message = $this->getMailer()->compose(
@@ -155,6 +156,41 @@ EOF
         return array(
             'status' => true,
         );
+      }
+
+      protected function ajaxgetModels(sfWebRequest $request) {
+        $brand = $request->getParameter('brand');
+
+        $models = CarsTable::getInstance()->getModelsByBrand($brand);
+
+        $arrModels = array();
+        foreach ($models as $model) {
+          $arrModels[] = $model->getModel();
+        }
+
+        return array(
+            'status' => true,
+            'models' => $arrModels,
+        );     
+
+      }
+
+      protected function ajaxgetSubmodels(sfWebRequest $request) {
+        $brand = $request->getParameter('brand');
+        $model = $request->getParameter('model');
+
+        $submodels = CarsTable::getInstance()->getSubmodelsByBrandAndModel($brand, $model);
+
+        $arrSubmodels = array();
+        foreach ($submodels as $submodel) {
+          $arrSubmodels[] = $submodel->getSubmodel();
+        }
+
+        return array(
+            'status' => true,
+            'submodels' => $arrSubmodels,
+        );     
+
       }
 
 }

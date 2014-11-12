@@ -5,16 +5,12 @@
 
 #page1 {
     background: white;
-    padding-top: 125px;
+    padding-top: 150px;
 }
 
 #hire-container{
     height: 150px;
     width: 100%;
-}
-
-#slider {
-    height: 270px;
 }
 
 #contact-form-section {
@@ -82,7 +78,7 @@
     background: -webkit-linear-gradient(#003E7E,#002B5F);
 }
 
-.content,.content2, .content3{
+.content, .content2, .content3{
     text-align: center;
     position: relative;
     width: 100%;
@@ -561,7 +557,6 @@ hr{
     height: 250px;
     width: 100%;
     background: -webkit-linear-gradient(#003E7E,#002B5F);
-    overflow: hidden;
 }
 
 #contact h3 {
@@ -578,6 +573,8 @@ hr{
 
 .contact__phone {
     position: relative;
+    left: 36%;
+    top: 10%;
     width: 40px;
     height: 40px;
     border: 1px solid white;
@@ -586,9 +583,9 @@ hr{
 
 .contact__phone .ion-ios7-telephone {
     position: absolute;
+    left: 28%;
+    top: 14%;
     color: white;
-    left: 27%;
-    top: 7%;
     font-size: 25px;
 }
 
@@ -605,12 +602,15 @@ hr{
     font-family: Montserrat, sans-serif;
     text-align: center;
     font-size: 15px;
+    margin-top: -10px;
     letter-spacing: 1px;
     padding-left: 0px;
 }
 
 .contact__mail-icon {
     position: relative;
+    left: 31%;
+    top: 10%;
     width: 40px;
     height: 40px;
     border: 1px solid white;
@@ -620,7 +620,7 @@ hr{
 .contact__mail-icon .ion-android-mail {
     position: absolute;
     left: 27%;
-    top: 19%;
+    top: 25%;
     color: white;
     font-size: 18px;
 }
@@ -630,6 +630,7 @@ hr{
     font-family: Montserrat, sans-serif;
     font-size: 15px;
     text-align: center;
+    margin-top: -7px;
     letter-spacing: 1px;
 }
 
@@ -639,10 +640,6 @@ hr{
 
 .contact__mail-icon:hover .ion-android-mail {
     color: #002D5C;
-}
-
-.contacto-row {
-    margin-top: 20px;
 }
 
                                             /* FOOTER */
@@ -732,6 +729,7 @@ footer ul li{
 
 .select {
     min-width: 1420px;
+
 }
 .select h1 {
     color: #003E7E; 
@@ -739,7 +737,7 @@ footer ul li{
     font-family: Raleway, sans-serif;
     font-weight: bold;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 70px;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -765,7 +763,6 @@ footer ul li{
 }
 
 .select-car {
-    float: left;
     position: relative;
     top: 33px;
     left: 15px;
@@ -780,7 +777,6 @@ footer ul li{
 }
 
 .select-seguros ul {
-    float: left;
     list-style: none;
     margin-top: 30px;
 }
@@ -840,6 +836,18 @@ footer ul li{
     font-weight: lighter;
 }
 
+.year-input {
+    width: 130px;
+    font-size: 13px;
+    line-height: 1;
+    height: 33px;
+    text-align: center;
+    color: #003E7E;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+
+}
+
                                             /* TOP BLUE BAR */
 
 .top-blue {
@@ -860,9 +868,18 @@ footer ul li{
     font-size: 13px;
 }
 
-.phone-number {
+.phone-number-top {
     float: right;
     margin-right: 35px;
+    margin-top: -17px;
+    font-family: Montserrat;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 13px;
+    position: relative;
+    bottom: 2px;
+}
+.phone-number {
     font-family: Montserrat;
     color: white;
     letter-spacing: 3px;

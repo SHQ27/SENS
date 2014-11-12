@@ -16,4 +16,34 @@ class CarsTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Cars');
     }
+
+    public function getAllBrands()
+    {        
+        $q =   $this->createQuery('c')
+         			->select ('distinct(c.brand) as brand')
+                    ->orderBy('brand');
+ 
+        return $q->execute();
+    }
+
+    public function getModelsByBrand($brand)
+    {        
+        $q =   $this->createQuery('c')
+         			->select ('distinct(c.model) as model')
+         			->addWhere('brand = ?', $brand)
+                    ->orderBy('brand');
+ 
+        return $q->execute();
+    }
+
+    public function getSubmodelsByBrandAndModel($brand, $model)
+    {        
+        $q =   $this->createQuery('c')
+         			->select ('distinct(c.submodel) as submodel')
+         			->addWhere('brand = ?', $brand)
+         			->addWhere('model = ?', $model)
+                    ->orderBy('brand');
+ 
+        return $q->execute();
+    }
 }
