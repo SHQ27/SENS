@@ -15,6 +15,6 @@ class ProjectConfiguration extends sfProjectConfiguration
 	{
 		parent::setRootDir($rootDir);
 
-		$this->setWebDir($rootDir . DIRECTORY_SEPARATOR . 'web');
+		$this->setWebDir($rootDir . DIRECTORY_SEPARATOR . 'sensgroup.com.ar');
 	}
 }
