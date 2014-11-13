@@ -41,7 +41,6 @@ class homeActions extends sfActions
         $email = $request->getParameter('hire-mail');
         $phone = $request->getParameter('hire-phone');
         $cell = $request->getParameter('hire-cell');
-        $time = $request->getParameter('hire-time');
 
         $brand = $request->getParameter('select-brand');
         $model = $request->getParameter('select-model');
@@ -62,7 +61,6 @@ class homeActions extends sfActions
         Dirección de mail: {$email}.
         Teléfono: {$phone}.
         Celular: {$cell}.
-        Horario de contacto: {$time}.
 
         Datos del automóvil:
         Marca: {$brand}.

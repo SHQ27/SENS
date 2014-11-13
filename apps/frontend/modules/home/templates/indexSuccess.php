@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/index.css">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,800,700,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/slider/nivo-slider.css">
         <link rel="stylesheet" href="css/infoseguros.css">
@@ -18,16 +19,59 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/index.js"></script>
         <script src="js/seguros.js"></script>
+        <script src="js/maps.js"></script>
         <script src="js/siniestro.js"></script>
         <script type="text/javascript" src="js/contacto.js"></script>
+        <script>
+        function initializeDerqui(latitud, longitud) {
+            var latlng = new google.maps.LatLng(latitud, longitud);
+            var settings = {
+                zoom: 15,
+                center: latlng,
+                mapTypeControl: true,
+                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                navigationControl: true,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas_derqui"), settings);
+            var companyPos = new google.maps.LatLng(latitud, longitud);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                title: "Derqui"
+            });
+        };
+        </script>
+        <script>
+        function initializeViso(latitud, longitud) {
+            var latlng = new google.maps.LatLng(latitud, longitud);
+            var settings = {
+                zoom: 15,
+                center: latlng,
+                mapTypeControl: true,
+                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                navigationControl: true,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas_viso"), settings);
+            var companyPos = new google.maps.LatLng(latitud, longitud);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                title: "Del Viso"
+            });
+        };
+        </script>
     </head>
-    <body>
+    <body onload='initializeDerqui(-34.4617896, -58.8594284); initializeViso( -34.4439678,-58.7864617)'>
     <header>
                                                 <!-- BLUE BAR TOP -->
 
     <div class="top-blue">
         <p class="info-sensgroup">info@sensgroup.com.ar</p>
-        <p class="phone-number-top">(02320)479-460</p>
+        <p class="phone-number-top">+54 11 5218-3028</p>
         <ul id="phone_list">
             <li class="ion-ios7-telephone"></li>
         </ul>
@@ -63,20 +107,24 @@
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>   
             <!-- Carousel items -->
             <div class="carousel-inner">
+                <div class="item">
+                    <img class='img-responsive' src="/img/slider/img_1.jpg" alt="Third slide">
+                </div>
                 <div class="item active">
-                    <img class='img-responsive' src="/img/slider/img_4.jpg" alt="First slide">
+                    <img class='img-responsive' src="/img/slider/img_3.jpg" alt="First slide">
                 </div>
                 <div class="item">
                     <img class='img-responsive' src="/img/slider/img_2.jpg" alt="Second slide">
                 </div>
                 <div class="item">
-                    <img class='img-responsive' src="/img/slider/img_3.jpg" alt="Third slide">
+                    <img class='img-responsive' src="/img/slider/img_4.jpg" alt="Third slide">
                 </div>
                 <div class="item">
-                    <img class='img-responsive' src="/img/slider/img_1.jpg" alt="Third slide">
+                    <img class='img-responsive' src="/img/slider/img_5.jpg" alt="Third slide">
                 </div>
             </div>
             <!-- Carousel nav -->
@@ -136,7 +184,6 @@
                 <input type='text' class='form-control' id="hire-mail" placeholder='E-mail'/>
                 <input type='text' class='form-control' id="hire-phone" placeholder='Teléfono'/>
                 <input type='text' class='form-control' id="hire-cell" placeholder='Celular'/>
-                <input type='text' class='form-control' id="hire-time" placeholder='Horario de Contacto'/>
                 <button id='hire-submit' class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' /> COTIZAR SEGURO</button>
             </div>
             <p class='cotizar-msg'>Uno de nuestros agentes se comunicará contigo a la brevedad.</p>
@@ -230,7 +277,7 @@
                                     <img class='sucur-img' src="img/DelViso.png">
                                 </div>
 
-                                <h3>DEL VISO</h3>
+                                <h3 id='viso-title' class='sucursal-title selected-sucursal'>DEL VISO</h3>
                         </div>
                 </div>
                 <div id='derqui' class="blu-images__container col-md-3">
@@ -244,15 +291,14 @@
                                          </div>
                                 <img class='sucur-img' src="img/Derqui.png">
                                 </div>
-                                <h3>DERQUI</h3>
+                                <h3 id='derqui-title' class='sucursal-title'>DERQUI</h3>
                         </div>
                 </div>
         <div class='col-md-3'></div>
         </div>
                                                     <!-- MAPS -->
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13160.977251457956!2d-58.78535017431141!3d-34.445945619523776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc993fb6f5b121%3A0x3946b374735be9b3!2sDel+Viso%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1412342785615" width="100%" height="350" frameborder="0" style="border:0"></iframe>
-    </div>
+    <div id='map_canvas_derqui_container'><div id="map_canvas_derqui" class='map'></div></div>
+    <div id='map_canvas_viso_container'><div id="map_canvas_viso" class='map'></div></div>
 
                                                     <!-- CONTACTO -->
 
@@ -261,7 +307,7 @@
             <div class="contact__phone">
                 <p class="ion-ios7-telephone"></p>
             </div>
-            <p class="phone-number">+54 11 3571-7166</p>
+            <p class="phone-number">+54 11 5218-3028</p>
             <div class="contact__mail-icon">
                 <p class="ion-android-mail"></p>
             </div>  
@@ -282,6 +328,7 @@
     <script>seguros();</script>
     <script>contacto();</script>
     <script>siniestro();</script>
+    <script>maps();</script>
     </div>
  </body>
 </html>

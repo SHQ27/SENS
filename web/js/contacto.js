@@ -38,8 +38,8 @@ var contacto = function() {
 			var errors = 0;
 			var requestURL = '';
 			
-			var reqFields = [name, mail, phone];
-			var optFields = [cell, time, brand, model, submodel, year];
+			var reqFields = [name, mail];
+			var optFields = [cell, time, brand, model, submodel, year, phone];
 			
 			for (i in reqFields) {
 				if (reqFields[i].val() == '' || reqFields[i].val().match('script') ) {
