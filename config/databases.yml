@@ -5,6 +5,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=localhost;dbname=sensgro_sens'
-      username: sensgro_admin
-      password: stugmann77
+      dsn: 'mysql:host=localhost;dbname=sens'
+      username: root
+      password: root
