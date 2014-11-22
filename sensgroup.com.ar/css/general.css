@@ -1,3 +1,7 @@
+#global-container {
+    min-width: 1420px;
+}
+
 .top-blue {
     background: -webkit-linear-gradient(#003E7E,#002B5F);
     width: 100%;

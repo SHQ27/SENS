@@ -68,7 +68,7 @@
     <body onload='initializeDerqui(-34.4617896, -58.8594284); initializeViso( -34.4439678,-58.7864617)'>
     <header>
                                                 <!-- BLUE BAR TOP -->
-
+    <div id='global-container'>
     <div class="top-blue">
         <p class="info-sensgroup">info@sensgroup.com.ar</p>
         <p class="phone-number-top">+54 11 5218-3028</p>
@@ -139,7 +139,7 @@
         <h1>COTIZÁ TU SEGURO ONLINE AHORA!</h1>
         <div class="select-seguros">
             <img class="select-car pull-left"src="img/car.png">
-            <ul class='pull-right'>
+            <ul>
                 <li>
                     <select id="select-brand" class="select-inputs">
                         <option class="select-options" value=''>Marca</option>
@@ -329,6 +329,7 @@
     <script>contacto();</script>
     <script>siniestro();</script>
     <script>maps();</script>
+    </div>
     </div>
  </body>
 </html>

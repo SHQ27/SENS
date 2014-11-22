@@ -55,7 +55,7 @@ var contacto = function() {
 			}
 
 			for (i in optFields) {
-				if (optFields[i].val().match('script') ) {
+				if (optFields[i].val() && optFields[i].val().match('script') ) {
 					optFields[i].css('border', '2px solid red');
 					errors += 1;
 				} else {

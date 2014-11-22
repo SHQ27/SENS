@@ -106,7 +106,7 @@ EOF
       $insExpire = $request->getParameter('ins-expire');
 
       $message = $this->getMailer()->compose(
-        array('webmaster@sensgroup.com.ar' => 'Web Sensgroup'),
+        array('lala@lala.com' => 'Web Sensgroup'),
         //CAMBIAR EMAIL POR FAVOR
         'sebas.hernandez.q@gmail.com',
         'Nuevo contacto en sensgroup.com.ar',
