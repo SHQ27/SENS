@@ -223,12 +223,12 @@
 
     <div id='seguros-section'></div>
     <div id='seguros' class='row'>
-        <div class='col-md-4 left-nav'>
+        <div class='col-md-4 col-sm-4 col-xs-4 left-nav'>
             <div class='row'>
-                <a href='#!' id='personas-link' class='col-md-6 section-title-container selected'>
+                <a href='#!' id='personas-link' class='col-md-6 col-sm-6 col-xs-6 section-title-container selected'>
                     <p class='section-title'> PERSONAS </p>
                 </a>
-                <a href='#!' id='empresas-link' class='col-md-6 section-title-container unselected'>
+                <a href='#!' id='empresas-link' class='col-md-6 col-sm-6 col-xs-6 section-title-container unselected'>
                     <p class='section-title'> EMPRESAS </p>
                 </a>
             </div>
@@ -237,7 +237,7 @@
             <?php include_partial('home/enterprise_nav') ?>
             </div>
         </div>
-        <div class='col-md-8'>
+        <div class='col-md-8 col-sm-8 col-xs-8'>
             <?php include_partial('home/info_containers') ?>
         </div>
     </div>
@@ -263,39 +263,40 @@
         <p>Creemos en los desafíos y nos obligamos a superar continuamente nuestro horizonte en busca de la completa satisfacción y tranquilidad del cliente. Nuestros resultados son fruto del compromiso y la dedicación permanente.
         En Sens serás atendido por personas comprensivas y serviciales que te escucharán, entenderán y valorarán; asesores que asumen la responsabilidad de dedicarle profunda atención a tus pedidos para hallar soluciones de manera rápida y precisa, y en definitiva poder llevar la gestión más eficiente.</p>
     </div>
+    <div class='sedes'>
     <div class="blue-images row">
-        <div class='col-md-3'></div>
-                <div id='del-viso' class="blu-images__container col-md-3">
+        <div class='col-md-3 col-sm-3 col-xs-3'></div>
+        <div id='del-viso' class="blu-images__container col-md-3 col-sm-3 col-xs-3">
             <div class="blue-images__delviso">
                 <div class="wrapper">
-                                <div class="text">
-                                <p class="address-title">DIRECCIÓN</p>
-                                <p>Av. Constitución 546</p>
-                                <p>Del Viso</p>
-                                <p>02320-666502</p>
-                                         </div>
-                                    <img class='sucur-img' src="img/DelViso.png">
-                                </div>
-
-                                <h3 id='viso-title' class='sucursal-title selected-sucursal'>DEL VISO</h3>
-                        </div>
-                </div>
-                <div id='derqui' class="blu-images__container col-md-3">
-                        <div class="blue-images__derqui">
-                                <div class="wrapper">
-                                <div class="text">
-                                <p class="address-title">DIRECCIÓN</p>
-                                <p>Av. Juan D. Perón 2200</p>
-                                <p>Derqui</p>
-                                <p>0230-4315404</p>
-                                         </div>
-                                <img class='sucur-img' src="img/Derqui.png">
-                                </div>
-                                <h3 id='derqui-title' class='sucursal-title'>DERQUI</h3>
-                        </div>
-                </div>
-        <div class='col-md-3'></div>
+                    <div class="text">
+                        <p class="address-title">DIRECCIÓN</p>
+                        <p>Av. Constitución 546</p>
+                        <p>Del Viso</p>
+                        <p>02320-666502</p>
+                    </div>
+                    <img class='sucur-img' src="img/DelViso.png">
+               </div>
+                <h3 id='viso-title' class='sucursal-title selected-sucursal'>DEL VISO</h3>
+            </div>
         </div>
+        <div id='derqui' class="blu-images__container col-md-3 col-sm-3 col-xs-3">
+            <div class="blue-images__derqui">
+                <div class="wrapper">
+                    <div class="text">
+                        <p class="address-title">DIRECCIÓN</p>
+                        <p>Av. Juan D. Perón 2200</p>
+                        <p>Derqui</p>
+                        <p>0230-4315404</p>
+                    </div>
+                    <img class='sucur-img' src="img/Derqui.png">
+                </div>
+                <h3 id='derqui-title' class='sucursal-title'>DERQUI</h3>
+            </div>
+        </div>
+        <div class='col-md-3 col-sm-3 col-xs-3'></div>
+    </div>
+    </div>
                                                     <!-- MAPS -->
     <div id='map_canvas_derqui_container'><div id="map_canvas_derqui" class='map'></div></div>
     <div id='map_canvas_viso_container'><div id="map_canvas_viso" class='map'></div></div>

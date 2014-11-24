@@ -49,9 +49,9 @@ class homeActions extends sfActions
         
         // send an email to the affiliate
         $message = $this->getMailer()->compose(
-        array('webmaster@sensgroup.com.ar' => 'Web Sensgroup'),
+        array('web@sensgroup.com.ar' => 'Web Sensgroup'),
         //CAMBIAR EMAIL POR FAVOR
-        'sebas.hernandez.q@gmail.com',
+        'web@sensgroup.com.ar',
         'Nuevo contacto en sensgroup.com.ar',
         <<<EOF
         Han utilizado el formulario de contacto de la web.
@@ -106,9 +106,9 @@ EOF
       $insExpire = $request->getParameter('ins-expire');
 
       $message = $this->getMailer()->compose(
-        array('lala@lala.com' => 'Web Sensgroup'),
+        array('web@sensgroup.com.ar' => 'Web Sensgroup'),
         //CAMBIAR EMAIL POR FAVOR
-        'sebas.hernandez.q@gmail.com',
+        'web@sensgroup.com.ar',
         'Nuevo contacto en sensgroup.com.ar',
         <<<EOF
         Han utilizado el formulario de siniestros de la web.
