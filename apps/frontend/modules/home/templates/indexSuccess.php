@@ -26,7 +26,7 @@
         function initializeDerqui(latitud, longitud) {
             var latlng = new google.maps.LatLng(latitud, longitud);
             var settings = {
-                zoom: 15,
+                zoom: 13,
                 center: latlng,
                 mapTypeControl: true,
                 mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -36,7 +36,7 @@
             };
             var map = new google.maps.Map(document.getElementById("map_canvas_derqui"), settings);
             var companyPos = new google.maps.LatLng(latitud, longitud);
-            var companyMarker = new google.maps.Marker({
+            var companyMarker = new google.maps.Marker({   
                 position: companyPos,
                 map: map,
                 title: "Derqui"
@@ -47,7 +47,7 @@
         function initializeViso(latitud, longitud) {
             var latlng = new google.maps.LatLng(latitud, longitud);
             var settings = {
-                zoom: 15,
+                zoom: 13,
                 center: latlng,
                 mapTypeControl: true,
                 mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -60,7 +60,7 @@
             var companyMarker = new google.maps.Marker({
                 position: companyPos,
                 map: map,
-                title: "Del Viso"
+                title: "Del Viso",
             });
         };
         </script>
