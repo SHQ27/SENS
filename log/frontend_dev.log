@@ -342,3 +342,31 @@ Nov 22 00:14:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/h
 Nov 22 00:14:10 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (8)
 Nov 22 00:14:10 symfony [info] {sfWebDebugLogger} Factories 38.78 ms (1)
 Nov 22 00:14:10 symfony [info] {sfWebDebugLogger} Action "home/ajax" 75.00 ms (1)
+Nov 27 06:10:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 27 06:10:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 27 06:10:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Nov 27 06:10:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 27 06:10:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 27 06:10:51 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Nov 27 06:10:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 27 06:10:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT distinct(c.brand) AS c__0 FROM cars c ORDER BY c.brand - ()
+Nov 27 06:10:51 symfony [info] {homeActions} Change layout to ""
+Nov 27 06:10:51 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/indexSuccess.php"
+Nov 27 06:10:51 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_people_nav.php"
+Nov 27 06:10:51 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_enterprise_nav.php"
+Nov 27 06:10:51 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_info_containers.php"
+Nov 27 06:10:51 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/SENS/apps/frontend/modules/home/templates/_modal.php"
+Nov 27 06:10:51 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 27 06:10:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 27 06:10:51 symfony [warning] {sfWebDebugLogger}  Warning at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/SENS/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Nov 27 06:10:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Configuration 1.37 ms (9)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Factories 34.36 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Action "home/index" 71.78 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.05 ms (2)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 35.33 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Partial "home/_people_nav" 1.02 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Partial "home/_enterprise_nav" 0.92 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Partial "home/_info_containers" 1.04 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebDebugLogger} Partial "home/_modal" 1.31 ms (1)
+Nov 27 06:10:51 symfony [info] {sfWebResponse} Send content (77734 o)

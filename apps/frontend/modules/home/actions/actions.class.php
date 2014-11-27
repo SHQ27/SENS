@@ -18,6 +18,7 @@ class homeActions extends sfActions
  	public function executeIndex(sfWebRequest $request)
  	{
     $this->brands = CarsTable::getInstance()->getAllBrands();
+    $this->setLayout(false);
  	}
 
     /**
@@ -46,6 +47,7 @@ class homeActions extends sfActions
         $model = $request->getParameter('select-model');
         $submodel = $request->getParameter('select-submodel');
         $year = $request->getParameter('hire-year');
+        $motive = $request->getParameter('hire-motive');
         
         // send an email to the affiliate
         $message = $this->getMailer()->compose(
@@ -68,7 +70,10 @@ class homeActions extends sfActions
         Submodelo: {$submodel}.
         Año: {$year}. 
 
-        Webmaster@sensgroup.com.ar      
+        Motivo del contacto: 
+        {$motive}.
+
+        web@sensgroup.com.ar      
 EOF
         );
  
@@ -102,8 +107,11 @@ EOF
       $insDu = $request->getParameter('ins-du');
       $insPhone = $request->getParameter('ins-phone');
       $insAddress = $request->getParameter('ins-address');
-      $insNumber = $request->getParameter('ins-number');
+      $insCoName = $request->getParameter('ins-name');
       $insExpire = $request->getParameter('ins-expire');
+      $insNumber = $request->getParameter('ins-number');
+
+      $fact = $request->getParameter('fact');
 
       $message = $this->getMailer()->compose(
         array('web@sensgroup.com.ar' => 'Web Sensgroup'),
@@ -114,36 +122,45 @@ EOF
         Han utilizado el formulario de siniestros de la web.
         A continuación, los datos aportados.
  
-        Tercero conductor. 
+        Datos del hecho. 
         - Fecha y horario: {$tcDate}
         - Localidad y Dirección: {$tcAddress}
 
-        Cédula verde propietario.
+        Tercero conductor.
+        
         - Nombre y apellido: {$cvpName}
         - D.N.I: {$cvpDu}
         - Domicilio: {$cvpAddress}
         - Teléfono: {$cvpPhone}
-
-        Testigos.
+        
+        Cédula verde propietario.
+        
         - Nombre y apellido: {$tesName}
         - D.N.I: {$tesDu}
         - Domicilio: {$tesAddress}
         - Teléfono: {$tesPhone}
-
-        Vehículos involucrados.
+        
+        Testigos.
+        
         - Nombre y apellido: {$ivName}
         - D.N.I: {$ivDu}
         - Domicilio: {$ivAddress}
         - Teléfono: {$ivPhone}
+      
+       Vehículos involucrados.
         
-        Aseguradora.
         - Nombre y apellido: {$insName}
         - D.N.I: {$insDu}
         - Domicilio: {$insAddress}
         - Teléfono: {$insPhone}
-
+        
+        Aseguradora.
+        - Nombre: {$insCoName}
         - Número de póliza: {$insNumber}.
         - Vencimientos: {$insExpire}.
+
+        Descripción del hecho:
+        {$fact}
 
 
         Webmaster@sensgroup.com.ar      

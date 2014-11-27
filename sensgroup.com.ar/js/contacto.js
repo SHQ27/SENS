@@ -34,12 +34,13 @@ var contacto = function() {
 			var model = $('#select-model');
 			var submodel = $('#select-submodel');
 			var year = $('#hire-year');
+			var motive = $('#hire-motive');
 
 			var errors = 0;
 			var requestURL = '';
 			
 			var reqFields = [name, mail];
-			var optFields = [cell, time, brand, model, submodel, year, phone];
+			var optFields = [cell, time, brand, model, submodel, year, phone, motive];
 			
 			for (i in reqFields) {
 				if (reqFields[i].val() == '' || reqFields[i].val().match('script') ) {

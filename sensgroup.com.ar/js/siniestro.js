@@ -38,10 +38,12 @@ var siniestro = function() {
 			var insNumber = $('#ins-number');
 			var insExpire = $('#ins-expire');
 
+			var fact = $('#fact');
+
 			var errors = 0;
 			var requestURL = '';
 			
-			var fields = [tcDate, tcAddress, cvpName, cvpDu, cvpPhone, cvpAddress, tesName, tesDu, tesPhone, tesAddress, ivName, ivDu, ivPhone, ivAddress, insName, insDu, insPhone, insAddress, insNumber, insExpire];
+			var fields = [tcDate, tcAddress, cvpName, cvpDu, cvpPhone, cvpAddress, tesName, tesDu, tesPhone, tesAddress, ivName, ivDu, ivPhone, ivAddress, insName, insDu, insPhone, insAddress, insNumber, insExpire, fact];
 			
 			for (i in fields) {
 				if (fields[i].val().match('script') ) {

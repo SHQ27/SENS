@@ -23,6 +23,7 @@
         <script src="js/maps.js"></script>
         <script src="js/siniestro.js"></script>
         <script type="text/javascript" src="js/contacto.js"></script>
+        <link rel="shortcut icon" href="img/sens.png">
         <script>
         function initializeDerqui(latitud, longitud) {
             var latlng = new google.maps.LatLng(latitud, longitud);
@@ -33,7 +34,8 @@
                 mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
                 navigationControl: true,
                 navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-                mapTypeId: google.maps.MapTypeId.ROADMAP
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel:false
             };
             var map = new google.maps.Map(document.getElementById("map_canvas_derqui"), settings);
             var companyPos = new google.maps.LatLng(latitud, longitud);
@@ -54,14 +56,15 @@
                 mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
                 navigationControl: true,
                 navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-                mapTypeId: google.maps.MapTypeId.ROADMAP
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel:false
             };
             var map = new google.maps.Map(document.getElementById("map_canvas_viso"), settings);
             var companyPos = new google.maps.LatLng(latitud, longitud);
             var companyMarker = new google.maps.Marker({
                 position: companyPos,
                 map: map,
-                title: "Del Viso",
+                title: "Del Viso"
             });
         };
         </script>
@@ -183,9 +186,10 @@
             <div class='form-cotizar'>
                 <p id="jq-contactanos">Contactanos</p>
                 <input type='text' class='form-control' id="hire-name" placeholder='Nombre y apellido'/>
-                <input type='text' class='form-control' id="hire-mail" placeholder='E-mail'/>
-                <input type='text' class='form-control' id="hire-phone" placeholder='Teléfono'/>
-                <input type='text' class='form-control' id="hire-cell" placeholder='Celular'/>
+                <input type='text' class='form-control' id="hire-mail" placeholder='E-mail (Ej: info@sensgroup.com.ar)'/>
+                <input type='text' class='form-control' id="hire-phone" placeholder='Teléfono (Ej: +54 11 5218-3028)'/>
+                <input type='text' class='form-control' id="hire-cell" placeholder='Celular (Ej: 15 5045 9192)'/>
+                <textarea class='form-control' id="hire-motive" placeholder='Redacte la razón de su consulta'/></textarea>
                 <button id='hire-submit' class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' /> COTIZAR SEGURO</button>
             </div>
             <p class='cotizar-msg'>Uno de nuestros agentes se comunicará contigo a la brevedad.</p>
@@ -301,8 +305,8 @@
     </div>
                                                     <!-- MAPS -->
 
-    <div id='map_canvas_derqui_container'><div id="map_canvas_derqui" class='map'></div></div>
-    <div id='map_canvas_viso_container'><div id="map_canvas_viso" class='map'></div></div>
+    <div id='map_canvas_derqui_container' style='position:relative'><div id="map_canvas_derqui" class='map'></div></div>
+    <div id='map_canvas_viso_container'style='position:relative'><div id="map_canvas_viso" class='map'></div></div>
 
                                                     <!-- CONTACTO -->
 

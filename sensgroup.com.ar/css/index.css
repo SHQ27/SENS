@@ -8,6 +8,11 @@
     width: 100%;
 }
 
+#hire-motive {
+    height: 100px;
+    max-height: 100px;
+}
+
 #contact-form-section {
     height: 150px;
 }

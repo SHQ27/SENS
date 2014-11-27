@@ -1,6 +1,17 @@
 ul {
 	list-style: none;
 }
+
+#fact {
+
+	height: 150px;
+}
+
+.syn-form-subtitle {
+	font-size: 15px;
+	color: #d4d4d4;
+	margin-left: 14px;
+}
                                                         /* MOODAL GENERAL */
 .modal-dialog {
     width: 77%;
