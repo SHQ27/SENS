@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,800,700,400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/slider/nivo-slider.css">
         <link rel="stylesheet" href="css/infoseguros.css">
         <link rel="stylesheet" href="css/modal1.css">
@@ -67,17 +68,18 @@
     </head>
     <body onload='initializeDerqui(-34.4617896, -58.8594284); initializeViso( -34.4439678,-58.7864617)'>
     <header>
+
                                                 <!-- BLUE BAR TOP -->
     <div id='global-container'>
-    <div class="top-blue">
-        <p class="info-sensgroup">info@sensgroup.com.ar</p>
-        <p class="phone-number-top">+54 11 5218-3028</p>
-        <ul id="phone_list">
-            <li class="ion-ios7-telephone"></li>
-        </ul>
-        <ul id="mail_list">
-            <li class="ion-android-mail"></li>
-        </ul>
+        <div class="top-blue">
+            <p class="info-sensgroup">info@sensgroup.com.ar</p>
+            <p class="phone-number-top">+54 11 5218-3028</p>
+            <ul id="phone_list">
+                <li class="ion-ios7-telephone"></li>
+            </ul>
+            <ul id="mail_list">
+                <li class="ion-android-mail"></li>
+            </ul>
     </div>
 
     <!-- NAVBAR -->
@@ -298,32 +300,53 @@
     </div>
     </div>
                                                     <!-- MAPS -->
+
     <div id='map_canvas_derqui_container'><div id="map_canvas_derqui" class='map'></div></div>
     <div id='map_canvas_viso_container'><div id="map_canvas_viso" class='map'></div></div>
 
                                                     <!-- CONTACTO -->
 
-        <div id="contact">
-            <h3>CONTACTANOS</h3>
-            <div class="contact__phone">
-                <p class="ion-ios7-telephone"></p>
-            </div>
-            <p class="phone-number">+54 11 5218-3028</p>
-            <div class="contact__mail-icon">
-                <p class="ion-android-mail"></p>
-            </div>  
-            <p class="contact__mail-text">INFO@SENSGROUP.COM.AR</p>
+    <div id="contact">
+        <div class="contact-icon-container">
+            <p class="contact-icons ion-flag"></p>
+            <p class="contact-icons ion-android-call"></p>
+            <p class="contact-icons ion-email"></p>
         </div>
+        <div class="col-xs-3 col-sm-3 col-md-3"></div>
+            <div class="contact-container col-xs-6 col-sm-6 col-md-6">
+<!--                 <h3>CONTACTANOS</h3> -->
+                <p class="contact-address">Av. Juan D. Perón 940 2° Piso <br><span>CABA (1038), Buenos Aires</span></p>
+                <p class="contact-phone">+54 11 5218-3028</p>
+                <p class="contact-mail">INFO@SENSGROUP.COM.AR</p>
+            </div>
+        <div class="col-xs-3 col-sm-3 col-md-3"></div>
+    </div>
+
+                                                      <!-- PIE DE PÁGINA -->
+
+    <div id="pie-pagina">
+        <div class="pie-img-container col-xs-6 col-sm-6 col-md-6">
+            <a href="http://www.ssn.gov.ar/" target="_blank"><img class="pie-ssn" src="img/ssn.png"></a>
+        </div>
+        <div class="pie-data-fiscal col-xs-6 col-sm-6 col-md-6">
+            <a href="#!"><img class="data-fiscal-img" src="img/dataFiscalBig.jpg"></a>
+        </div>
+    </div>
+
 
                                                     <!-- FOOTER -->
     <footer>
+        <div class="footer-rights">
             <p>©2014 Sens Group All rights Reserved.</p>
-            <ul>
-                <li><a onClick="goToByScroll('contact'); return false;" href="#">Información</a></li>
-                <li><a onClick="goToByScroll('contact-form-section'); return false;" href="#">Cotizar seguro</a></li>
-                <li><a onClick="goToByScroll('seguros-section'); return false;" href="#">Seguros</a></li>
+        </div>
+        <div>
+            <ul class="footer-nav">
                 <li><a onClick="goToByScroll('page1'); return false;" href="#">Inicio</a></li>
+                <li><a onClick="goToByScroll('contact-form-section'); return false;" href="#">Cotizar Seguro</a></li>
+                <li><a onClick="goToByScroll('seguros-section'); return false;" href="#">Seguros</a></li>
+                <li><a onClick="goToByScroll('contact'); return false;" href="#">Contacto</a></li>
             </ul>
+        </div>
     </footer>
     <?php include_partial('home/modal') ?>
     <script>seguros();</script>
@@ -334,3 +357,8 @@
     </div>
  </body>
 </html>
+
+
+
+
+
