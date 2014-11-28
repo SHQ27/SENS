@@ -23,7 +23,7 @@
         <script src="js/maps.js"></script>
         <script src="js/siniestro.js"></script>
         <script type="text/javascript" src="js/contacto.js"></script>
-        <link rel="shortcut icon" href="img/sens.png">
+       
         <script>
         function initializeDerqui(latitud, longitud) {
             var latlng = new google.maps.LatLng(latitud, longitud);
@@ -68,6 +68,17 @@
             });
         };
         </script>
+        <script type="text/javascript">
+var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/53848db9e33ac3a8210000ad/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
     </head>
     <body onload='initializeDerqui(-34.4617896, -58.8594284); initializeViso( -34.4439678,-58.7864617)'>
     <header>
@@ -359,6 +370,7 @@
     <script>maps();</script>
     </div>
     </div>
+
  </body>
 </html>
 
