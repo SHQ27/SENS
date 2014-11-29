@@ -15,10 +15,14 @@ ul {
                                                         /* MOODAL GENERAL */
 .modal-dialog {
     width: 77%;
+    min-width: 800px;
 }
 
 .modal-content {
 	background: -webkit-linear-gradient(#003E7E,#002B5F);
+	background: -ms-linear-gradient(#003E7E,#002B5F);
+	background: -moz-linear-gradient(#003E7E,#002B5F);
+	background: -o-linear-gradient(#003E7E,#002B5F);
 }
 
 .modal-body {
@@ -28,7 +32,6 @@ ul {
 .modal-footer {
     margin-top: 30px;
 }
-
 
 														/* TOP */
 
@@ -83,6 +86,7 @@ ul {
 .modal-inputs {
     width: 100%;
 }
+
 														/* SUBMIT BUTTON */
 
 .modal-enviar-datos {
@@ -119,8 +123,11 @@ ul {
     display: none;
 }
 
+														/* SUBMIT BUTTON */
 
-
+.form-top__modal {
+	text-align: center;
+}
 
 
 

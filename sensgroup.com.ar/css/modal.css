@@ -1,11 +1,15 @@
 .modal {
     width: 77% !important;
+    min-width: 800px;
 }
 														/* TOP */
 
 .form-modal {
 	background: -webkit-linear-gradient(#003E7E,#002B5F);
-	height: 1075px;
+	background: -ms-linear-gradient(#003E7E,#002B5F);
+	background: -moz-linear-gradient(#003E7E,#002B5F);
+	background: -o-linear-gradient(#003E7E,#002B5F);
+	height: 50px;
 }
 
 .form-top {
@@ -28,6 +32,11 @@
 	letter-spacing: 1px;
 	float: right;
 }
+
+.form-top__modal {
+	text-align: center;
+}
+
 
 														/* DATA */
 
@@ -146,8 +155,9 @@
 	text-shadow: none;
 }
 
+														/* MODAL DATA FISCAL */
 
-
-
-
+.datafiscal-modal-img {
+	margin-left: 50px;
+}
 
