@@ -80,7 +80,7 @@
         })();
 </script>
     </head>
-    <body onload='initializeDerqui(-34.4617896, -58.8594284); initializeViso( -34.4439678,-58.7864617)'>
+    <body onload='initializeDerqui(-34.465353, -58.859457); initializeViso( -34.4439678,-58.7864617)'>
     <header>
 
                                                 <!-- BLUE BAR TOP -->
@@ -201,7 +201,7 @@
                 <input type='text' class='form-control' id="hire-phone" placeholder='Teléfono (Ej: +54 11 5218-3028)'/>
                 <input type='text' class='form-control' id="hire-cell" placeholder='Celular (Ej: 15 5045 9192)'/>
                 <textarea class='form-control' id="hire-motive" placeholder='Redacte la razón de su consulta'/></textarea>
-                <button id='hire-submit' class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' /> COTIZAR SEGURO</button>
+                <button id='hire-submit' class='btn btn-success cotizar-submit' value='COTIZAR SEGURO' /> ENVIAR</button>
             </div>
             <p class='cotizar-msg'>Uno de nuestros agentes se comunicará contigo a la brevedad.</p>
         </div>
@@ -263,8 +263,10 @@
     <div class="p-our-beliefs">
         <h3>TU TRANQUILIDAD, NUESTRO COMPROMISO.</h3>
         <div class="security-line"></div>
-        <p>Creemos en los desafíos y nos obligamos a superar continuamente nuestro horizonte en busca de la completa satisfacción y tranquilidad del cliente. Nuestros resultados son fruto del compromiso y la dedicación permanente.
-        En Sens serás atendido por personas comprensivas/serviciales que te escucharán, entenderán y valorarán; asesores que asumen la responsabilidad de dedicarle profunda atención a tus pedidos para hallar soluciones de manera rápida y precisa, y en definitiva poder llevar la gestión más eficiente.</p>
+        <p>Creemos en los desafíos y nos obligamos a ampliar continuamente nuestro horizonte en busca de la completa satisfacción y tranquilidad del cliente. Nuestros resultados son fruto del compromiso y la dedicación.
+            En Sens serás atendido por personas serviciales que te escucharán, entenderán y valorarán; asesores que asumen la responsabilidad de dedicarle profunda atención a tus pedidos para hallar soluciones de manera rápida y precisa, y poder llevar la gestión más eficiente. <br>
+            <span>En Sens nos involucramos. Eso es de lo que Sens se trata.</span>
+        </p>
     </div>
 
                                                         <!-- SUCURSALES -->
@@ -274,11 +276,12 @@
         <h1>SUCURSALES</h1>
         <hr class="sucursales__line">
     </div>
-    <div class="text-sucursales">
-        <h2>SEGUIMOS PROYECTANDO. SEGUIMOS CRECIENDO.</h2>
-        <hr>
-        <p>Creemos en los desafíos y nos obligamos a superar continuamente nuestro horizonte en busca de la completa satisfacción y tranquilidad del cliente. Nuestros resultados son fruto del compromiso y la dedicación permanente.
-        En Sens serás atendido por personas comprensivas y serviciales que te escucharán, entenderán y valorarán; asesores que asumen la responsabilidad de dedicarle profunda atención a tus pedidos para hallar soluciones de manera rápida y precisa, y en definitiva poder llevar la gestión más eficiente.</p>
+        <div class="p-our-beliefs">
+        <h3>SEGUIMOS PROYECTANDO. SEGUIMOS CRECIENDO.</h3>
+        <div class="security-line"></div>
+        <p>Queremos conocerte. Queremos comprometernos. Nuestro propio personal de atención se encuentra en la primera línea, ayudando a los clientes a resolver problemas.
+            Todos los días escuchamos sugerencias de nuestros usuarios para aprender más acerca de los servicios en que debemos estar más centrados. Acercate y sentite libre de charlar con nosotros en cualquier momento y contarnos tus necesidades específicas para que nosotros podamos ayudarte. Con tu colaboración nos perfeccionamos.
+        </p>
     </div>
     <div class='sedes'>
     <div class="blue-images row">
@@ -344,7 +347,7 @@
             <a href="http://www.ssn.gov.ar/" target="_blank"><img class="pie-ssn" src="img/ssn.png"></a>
         </div>
         <div class="pie-data-fiscal col-xs-6 col-sm-6 col-md-6">
-            <a href="#!" data-toggle='modal' data-target='#dataFiscal'><img class="data-fiscal-img" src="img/dataFiscalBig.jpg"></a>
+            <a href="http://qr.afip.gob.ar/?qr=6Kxds23CSrfij2J3CyI1Zw,," target="_F960AFIPInfo"><img class="data-fiscal-img" src="img/dataFiscalSmall.jpg"></a>
         </div>
     </div>
 

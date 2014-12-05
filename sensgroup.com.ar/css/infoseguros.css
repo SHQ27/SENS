@@ -47,3 +47,13 @@
 	transform: translate(-50%, 0%);
 }
 
+#caucion-garantias-info ul {
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-family: Raleway, sans-serif;
+	padding: 0;
+	padding-top: 20px;
+	letter-spacing: 1px;
+	line-height: 2;
+}

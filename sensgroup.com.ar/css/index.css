@@ -437,7 +437,7 @@ hr{
 
 .security-line {
     width: 85%;
-    height: 50px;
+    height: 20px;
     border-top: 1px solid #003E7E;
     margin: 0 auto;
     margin-top: -8px;
@@ -451,11 +451,14 @@ hr{
     font-size: 15px;
     line-height: 25px;
     letter-spacing: 1px;
-    margin-left: 90px;
-    margin-right: 50px;
-    margin-top: -30px;
+    margin: 0 auto;
     padding-bottom: 30px;
     margin-bottom: 30px;
+}
+
+.p-our-beliefs p span {
+    line-height: 40px;
+    font-weight: 700;
 }
 
                                                 /* SUCURSALES */
@@ -494,6 +497,7 @@ hr{
 .blue-images {
     margin: 0;
     width: 100%;
+    min-width: 800px;
     height: 310px;
     background: -webkit-linear-gradient(#003E7E,#002B5F);
     background: -webkit-linear-gradient(#003E7E,#002B5F);
@@ -510,14 +514,14 @@ hr{
 
 .blu-images__container {
     cursor: pointer;
-    margin-left: 30px;
 }
 
 .blue-images__delviso {
-    padding: 20px;
+    padding-top: 31px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin: auto;
  }
 
 .blue-images__delviso img{
@@ -527,10 +531,11 @@ hr{
 }
 
 .blue-images__derqui {
-    padding: 20px;
+    padding-top: 31px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin: auto;
  }
 
 .blue-images__derqui img{
@@ -544,7 +549,6 @@ hr{
     font-family: Raleway, sans-serif;
     font-weight: lighter;
     color: white;
-    margin-left: 40px;
 }
 
 .blue-images__delviso h3 {
@@ -552,7 +556,6 @@ hr{
     font-family: Raleway, sans-serif;
     font-weight: lighter;
     color: white;
-    margin-left: 37px;
 }
 
 
@@ -608,10 +611,9 @@ hr{
                                             /* CONTACTO */
 
 #contact {
-    padding: 20px;
     margin-top: -10px;
     position: relative;
-    height: 300px;
+    height: 210px;
     width: 100%;
     min-width: 800px;
     background: -webkit-linear-gradient(#003E7E,#002B5F);
@@ -637,7 +639,7 @@ hr{
 }*/
 
 .contact-container {
-    margin-top: 20px;
+    margin-top: -13px;
 }
 
 .contact-phone, .contact-mail, .contact-address {
@@ -645,15 +647,15 @@ hr{
     font-family: Lato, sans-serif;
     font-weight: 500;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
-    margin: 27px 0px;
+    margin: 31px 0px 0px 0px;
     line-height: 2;
 }
 
 
 .contact-icon-container {
-    margin-top: 4px; 
+    margin-top: -24px; 
     float: right;
     position: absolute;
     color: white;
@@ -704,14 +706,19 @@ footer {
     min-width: 800px;
 }
 
-footer p {
-    width: 250px;
+.footer-rights {
+    margin-top: 2px;
+    width: 500px;
+}
+
+.footer-rights p {
+    width: 300px;
     color: rgba(255,255,255,0.5);
     font-family: Raleway, sans-serif;
     font-weight: lighter;
     font-size: 12px;
     margin-left: 50px;
-    padding-top: 25px;
+    padding-top: 3px;
     margin-top: 7px;
 }
 
@@ -744,7 +751,7 @@ footer ul li{
 #pie-pagina {
     width: 100%;
     min-width: 800px;
-    height: 220px;
+    height: 110px;
     background: rgb(233,237,239);
 }
 
@@ -753,19 +760,21 @@ footer ul li{
 }
 
 .pie-ssn  {
-    width: 70%;
-    margin-top: 85px;
-    margin-bottom: 75px;
+    width: 50%;
+    min-width: 300px;
+    margin-top: 35px;
+    margin-right: 40px;
     float: right;
 }
 
 .pie-data-fiscal {
-    text-align: center;
+    padding-left: 10%;
 }
 
 .data-fiscal-img {
-    width: 100px;
-    margin-top: 35px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 12%;
 }
 
 

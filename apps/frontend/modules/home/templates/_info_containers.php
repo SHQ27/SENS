@@ -4,7 +4,7 @@
 <div id='personas-info' class='info-container'>
     <img src="img/personas.png">
     <h1>PERSONAS</h1>
-    <p>Nuestros agentes y representantes realmente se involucran con cada persona. Entienden sus problemas, y hallan el camino para llevar la gestión de la mejor forma posible. Sens se centra en la experiencia del servicio en seguros, no es tan sólo la transferencia deinformación, en Sens nos involucramos.</p>
+    <p>Nos involucramos con cada persona. Entendemos sus problemas, y hallamos el camino para llevar la gestión de la mejor forma posible. Sens se centra en la experiencia del servicio en seguros, progresamos todos los días para proveer el mejor asesoramiento.</p>
     <p class="personas-bottomtext">Eso es de lo que Sens se trata.</p>
 </div>
 
@@ -12,19 +12,19 @@
 <div id='automotores-info' class='info-container'>
     <img src="img/personas.png">
     <h1>AUTOMOTORES</h1>
-    <p>Comuníquese con nuestros representantes y obtenga la más amplia cobertura al mejor precio del mercado. Ofrecemos asesoría y participación en la presentación de siniestros, reclamos y documentación asociada a las aseguradoras terceras.
+    <p>Comuníquese con nuestro servicio de atención al cliente y obtenga la más amplia cobertura al mejor precio del mercado. Ofrecemos asesoría y seguimiento en la presentación de siniestros, reclamos y documentación asociada a las aseguradoras terceras.
     </p>
 </div>
 
 <div id='combinado-familiar-info' class='info-container'>
     <img src="img/personas.png">
     <h1>COMBINADO FAMILIAR</h1>
-    <p>Encuentre para su casa un seguro a su medida. Marcamos la diferencia por medio de sugerencias y consejos de seguros a través de un servicio personalizado.</p>
+    <p>Encuentre para su vivienda un seguro a su medida. Marcamos la diferencia a través de asesoramiento personalizado.</p>
 </div>
 <div id="accidentes-personales-info" class='info-container'>
    <img src="img/personas.png">
    <h1>ACCIDENTES PERSONALES</h1>
-   <p>Consiga el seguro adaptado a las necesidades particulares de cada cliente de manera rápida y precisa. Ideal para eventos, trabajos eventuales y labores diarias.</p>
+   <p>Consiga el seguro adaptado a sus necesidades particulares de manera rápida y precisa. Ideal para eventos, trabajos eventuales y labores diarias.</p>
 </div>
 
 <!-- EMPRESAS -->
@@ -32,7 +32,7 @@
 <div id="empresas-info" class='info-container'>
     <img src="img/empresas.png">
 	<h1>EMPRESAS</h1>
-	<p>Sens cuenta con una extensa esfera de servicios que suman valor agregado a sus clientes. En adición a la cobertura, nuestros servicios facilitarán la disminución de sus costos, logrando mejorar la rentabilidad de su negocio.</p>
+	<p>SENS cuenta con una extensa esfera de servicios que suman valor agregado a sus clientes. En adición a la cobertura, nuestros servicios facilitarán la disminución de sus costos, logrando mejorar la rentabilidad de su negocio.</p>
 	<p>(ARMADO INTEGRAL DEL PROGRAMA DE SEGUROS)</p>
 </div>
 
@@ -65,7 +65,13 @@
 <div id="caucion-garantias-info" class='info-container'>
     <img src="img/empresas.png">
     <h1>CAUCIÓN Y GARANTÍAS</h1>
-    <p>Garantías contractuales para obras y/o suministros, garantías aduaneras para comercio exterior, garantías para el ejercicio de profesión, garantías judiciales, más garantías.</p>
+    <ul>
+        <li>Garantías contractuales para obras y/o suministros.</li>
+        <li>Garantías aduaneras para comercio exterior.</li>
+        <li>Garantías para el ejercicio de profesión.</li>
+        <li>Garantías judiciales.</li>
+        <li>Otras Garantías.</li>
+    </ul>
 </div>
 <div id="transporte-info" class='info-container'>
     <img src="img/empresas.png">
