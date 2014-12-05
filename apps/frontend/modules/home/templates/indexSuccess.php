@@ -285,8 +285,8 @@
     </div>
     <div class='sedes'>
     <div class="blue-images row">
-        <div class='col-md-3 col-sm-3 col-xs-3'></div>
-        <div id='del-viso' class="blu-images__container col-md-3 col-sm-3 col-xs-3">
+        <div class='col-lg-3 col-md-3 col-sm-2 col-xs-2'></div>
+        <div id='del-viso' class="blu-images__container col-lg-3 col-md-3 col-sm-4 col-xs-4">
             <div class="blue-images__delviso">
                 <div class="wrapper">
                     <div class="text">
@@ -300,7 +300,7 @@
                 <h3 id='viso-title' class='sucursal-title selected-sucursal'>DEL VISO</h3>
             </div>
         </div>
-        <div id='derqui' class="blu-images__container col-md-3 col-sm-3 col-xs-3">
+        <div id='derqui' class="blu-images__container col-lg-3 col-md-3 col-sm-4 col-xs-4">
             <div class="blue-images__derqui">
                 <div class="wrapper">
                     <div class="text">
@@ -314,7 +314,7 @@
                 <h3 id='derqui-title' class='sucursal-title'>DERQUI</h3>
             </div>
         </div>
-        <div class='col-md-3 col-sm-3 col-xs-3'></div>
+        <div class='col-lg-3 col-md-3 col-sm-2 col-xs-2'></div>
     </div>
     </div>
                                                     <!-- MAPS -->

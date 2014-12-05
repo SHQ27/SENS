@@ -500,7 +500,6 @@ hr{
     min-width: 800px;
     height: 310px;
     background: -webkit-linear-gradient(#003E7E,#002B5F);
-    background: -webkit-linear-gradient(#003E7E,#002B5F);
     background: -moz-linear-gradient(#003E7E,#002B5F);
     background: -o-linear-gradient(#003E7E,#002B5F);
     background: -ms-linear-gradient(#003E7E,#002B5F);
@@ -509,22 +508,24 @@ hr{
 }
 
 .sedes {
-    min-width: 1240px;
+    min-width: 800px;
 }
 
 .blu-images__container {
     cursor: pointer;
+    min-width: 260px;
 }
 
 .blue-images__delviso {
-    padding-top: 31px;
     width: 200px;
-    height: 200px;
+    padding-top: 31px;
     border-radius: 50%;
     margin: auto;
+    text-align: center;
  }
 
 .blue-images__delviso img{
+    margin: 0 auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -533,7 +534,6 @@ hr{
 .blue-images__derqui {
     padding-top: 31px;
     width: 200px;
-    height: 200px;
     border-radius: 50%;
     margin: auto;
  }
@@ -787,7 +787,6 @@ footer ul li{
 .wrapper {
     position: relative;
     padding: 0;
-    width:100px;
     display:block;
 }
 
